@@ -1,0 +1,270 @@
+/* 
+
+----- Colors ----- 
+#Main Color #228BE6
+#Secondary Color #FBFBFB
+
+Heading 1 color #228BE6
+Heading 2 color #595959
+Heading 3 color #393939
+Heading 4 color #393939
+
+Sub heading color #428AC9
+
+P, span, a color #393939
+
+------ Font style -----
+Font Style: Poppins
+
+----- Font Size -----
+P, span, a - 1.8rem 
+
+Heading 1 - 7rem
+Heading 2 - 6.2rem
+Heading 3 - 5rem
+Heading 4 - 4rem
+
+Sub heading - 2.2rem
+
+
+----- Content -----
+Width: 133.5rem
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.8rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1.2vh;
+}
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+::-webkit-scrollbar-thumb {
+  background: #8cc6f9;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #228be6b4;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: rgba(51, 69, 109, 0.779), #006cc9;
+    scrollbar-width: auto;
+  }
+}
+
+.container {
+  max-width: 133.5rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.subheading {
+  font-size: 2.2rem;
+  color: #228be6;
+}
+
+.text-description {
+  line-height: 1.6;
+  color: #393939;
+  display: block;
+}
+
+.heading-primary {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #228be6;
+}
+
+.heading-secondary {
+  font-size: 6.2rem;
+  color: #595959;
+}
+.heading-tertiary {
+  font-size: 5rem;
+  color: #393939;
+}
+
+.heading-quaternary {
+  font-size: 4rem;
+}
+
+.heading-quinary {
+  font-size: 2.4rem;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.translate {
+  transform: translateY(-20%);
+}
+
+.img {
+  width: 8rem;
+  height: 8rem;
+  color: #228be6;
+}
+/* .img {
+  width: 100%;
+
+  display: block;
+} */
+
+/* Margins */
+.margin-btm-sm {
+  margin-bottom: 2.2rem;
+}
+
+.margin-btm-md {
+  margin-bottom: 6rem;
+}
+/* End of margins */
+
+.btn-primary:link,
+.btn-primary:visited {
+  color: #fff !important;
+  background-color: #228be6;
+  padding: 2rem 4rem;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+  border-radius: 0.5rem;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  padding: 2rem 5.87rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #228be6;
+  font-weight: 500;
+  /* border: 1px solid #228be6; */
+  box-shadow: inset 0 0 0 2px #228be6;
+  transition: ease-in-out 0.3s;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+/* .btn-secondary:link:hover {
+  color: #fff;
+} */
+.btn-secondary:link::before {
+  content: "";
+  background-image: linear-gradient(to right, #228be6, #228be6);
+  opacity: 1;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  transition: ease-in-out 0.3s;
+  z-index: -1;
+  border-radius: 0.5rem;
+}
+
+.btn-secondary:link:hover,
+.btn-secondary:visited:hover {
+  color: #fff;
+}
+
+.btn-secondary:link:hover:before {
+  width: 100%;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--1-col {
+  grid-template-columns: 1fr;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid--4-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.tag-img {
+  width: 2.5rem;
+  height: 3rem;
+}
+.btn-img {
+  width: 5rem;
+}
+
+.spin {
+  /* transform: rotate(360deg) scale(1.2); */
+  transform: rotateX(360deg);
+  transition: all 1s;
+
+  z-index: 9999;
+}
+
+.spin span {
+  color: #dfdfdf;
+  transition: all 1s;
+  letter-spacing: 2px;
+}
+
+.section-up {
+  margin-top: 40rem;
+}
+
+.center {
+}
+.flex-last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mbl-icon {
+  /* display: none; */
+  /* box-shadow: inset 0 0 0 2px #0a59c0 transparent; */
+}
