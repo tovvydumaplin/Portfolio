@@ -20,10 +20,40 @@ const btnPrimary = document.querySelector(".btn-mobile");
 btnPrimary.addEventListener("click", function () {
   headerEl.classList.toggle("drop-open");
 });
+
+// DROP DOWN MENU FROM ICON
+
+const downIcon = document.querySelector(".down-icon");
+
+downIcon.addEventListener("click", function () {
+  headerEl.classList.toggle("drop-open");
+});
 // CLOSING DROP DOWN
 const dropDown = document.querySelector(".drop-down");
 dropDown.addEventListener("click", function () {
   headerEl.classList.toggle("drop-open");
+});
+
+// IMAGE ZOOM 1
+const previewImg1 = document.querySelector(".prev-1");
+const imgBoxFirst = document.querySelector(".img--box-first");
+
+previewImg1.addEventListener("click", function () {
+  imgBoxFirst.classList.toggle("zoom");
+});
+// IMAGE ZOOM 2
+const previewImg2 = document.querySelector(".prev-2");
+const imgBoxSecond = document.querySelector(".img--box-second");
+
+previewImg2.addEventListener("click", function () {
+  imgBoxSecond.classList.toggle("zoom");
+});
+// IMAGE ZOOM 3
+const previewImg3 = document.querySelector(".prev-3");
+const imgBoxThird = document.querySelector(".img--box-third");
+
+previewImg3.addEventListener("click", function () {
+  imgBoxThird.classList.toggle("zoom");
 });
 
 // CLOSE DROP DOWN UPON SCROLL
@@ -47,6 +77,7 @@ document.addEventListener("scroll", (event) => {
     headerEl.classList.remove("drop-open");
   }
 });
+// UP TO HERE DROP DOWN SCROLL
 
 // Close mobile naviagtion
 
