@@ -257,12 +257,6 @@ body {
 
 .center {
 }
-.flex-last {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
 
 .mbl-icon {
   /* display: none; */

@@ -44,18 +44,20 @@
         <ul class="nav-items">
           <li>
             <!-- <ion-icon class="mbl-icon" name="person-outline"></ion-icon> -->
-            <a href="#about" class="nav-item">About</a>
+            <a href="#about" class="nav-item view-1">About</a>
           </li>
 
           <li>
-            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#skills" class="nav-item view-2">Skills</a>
           </li>
           <li>
-            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#projects" class="nav-item view-3">Projects</a>
           </li>
           <li class="flex-last">
-            <a href="#none" class="nav-item btn-mobile center">Contact </a>
             <ion-icon class="down-icon" name="chevron-down-outline"></ion-icon>
+            <a href="#none" class="nav-item nav--item-spec btn-mobile center"
+              >Contact
+            </a>
           </li>
         </ul>
       </nav>
@@ -112,7 +114,10 @@
             </div>
             <div class="hero-btn-box margin-btm-md">
               <a href="#cta" class="btn-primary">Get in touch</a>
-              <a href="resume.pdf" target="_blank" class="btn-secondary"
+              <a
+                href="Resume_Tovvy_Dumaplin.pdf"
+                target="_blank"
+                class="btn-secondary"
                 >Resume</a
               >
             </div>
@@ -165,9 +170,9 @@
         <div class="container">
           <h2 class="heading-secondary margin-btm-sm">About me</h2>
           <div class="about-box grid grid--2-cols">
-            <div class="img-box">
+            <div class="image-box">
               <img
-                src="images/tovvy-img.png"
+                src="images/tovvy-img.webp"
                 class="img-profile"
                 alt="Tovvy Dumaplin"
               />
@@ -208,7 +213,7 @@
             </p>
           </div>
 
-          <figure class="img-box grid grid--2-cols">
+          <figure class="image-box grid grid--2-cols">
             <picture class="img-wrapper">
               <!-- <img src="images/html.png" class="img" alt="HTML logo" /> -->
               <ion-icon class="img" name="logo-html5"></ion-icon>
@@ -244,10 +249,14 @@
           <article class="projects">
             <!-- 1st project -->
             <div class="project-box grid grid--2-cols">
-              <picture class="img-box">
+              <picture class="img-box img--box-first">
+                <ion-icon
+                  class="preview-img prev-1"
+                  name="repeat-outline"
+                ></ion-icon>
                 <img
                   src="images/loopstudio-img.webp"
-                  class="project-img"
+                  class="project-img first"
                   alt="Loopstudio preview"
                 />
               </picture>
@@ -302,14 +311,23 @@
 
                   <div class="btn-box">
                     <div class="btn-view">
-                      <a href="#" class="btn-img-link">
+                      <a
+                        href="https://loopstudio-tovvy.netlify.app/"
+                        target="_blank"
+                        class="btn-img-link"
+                      >
                         <ion-icon
                           class="btn-img"
                           name="arrow-forward-circle-outline"
                         ></ion-icon>
                       </a>
 
-                      <a href="#" class="project-link">View live site</a>
+                      <a
+                        href="https://loopstudio-tovvy.netlify.app/"
+                        target="_blank"
+                        class="project-link"
+                        >View live site</a
+                      >
                     </div>
 
                     <div class="btn-view">
@@ -318,10 +336,19 @@
                         class="btn-img"
                         alt="View icon"
                       /> -->
-                      <a href="#" class="btn-img-link">
+                      <a
+                        href="https://github.com/tovvydumaplin/Loopstudio-landing-page.git"
+                        target="_blank"
+                        class="btn-img-link"
+                      >
                         <ion-icon class="btn-img" name="logo-github"></ion-icon>
                       </a>
-                      <a href="#" class="project-link">View in GitHub</a>
+                      <a
+                        href="https://github.com/tovvydumaplin/Loopstudio-landing-page.git"
+                        target="_blank"
+                        class="project-link"
+                        >View in GitHub</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -329,10 +356,14 @@
             </div>
             <!-- 2nd project -->
             <div class="project-box grid grid--2-cols">
-              <picture class="img-box">
+              <picture class="img-box img--box-second">
+                <ion-icon
+                  class="preview-img prev-2"
+                  name="repeat-outline"
+                ></ion-icon>
                 <img
                   src="images/omnifood-img.webp"
-                  class="project-img"
+                  class="project-img second"
                   alt="Omnifood preview"
                 />
               </picture>
@@ -392,13 +423,22 @@
                         class="btn-img"
                         alt="View icon"
                       /> -->
-                      <a href="#" class="btn-img-link">
+                      <a
+                        href="https://omnifood-tovvy.netlify.app/"
+                        target="_blank"
+                        class="btn-img-link"
+                      >
                         <ion-icon
                           class="btn-img"
                           name="arrow-forward-circle-outline"
                         ></ion-icon>
                       </a>
-                      <a href="#" class="project-link">View live site</a>
+                      <a
+                        href="https://omnifood-tovvy.netlify.app/"
+                        target="_blank"
+                        class="project-link"
+                        >View live site</a
+                      >
                     </div>
 
                     <div class="btn-view">
@@ -407,10 +447,19 @@
                         class="btn-img"
                         alt="View icon"
                       /> -->
-                      <a href="#" class="btn-img-link">
+                      <a
+                        href="https://github.com/tovvydumaplin/Omnifood.git"
+                        target="_blank"
+                        class="btn-img-link"
+                      >
                         <ion-icon class="btn-img" name="logo-github"></ion-icon>
                       </a>
-                      <a href="#" class="project-link">View in GitHub</a>
+                      <a
+                        href="https://github.com/tovvydumaplin/Omnifood.git"
+                        target="_blank"
+                        class="project-link"
+                        >View in GitHub</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -419,21 +468,25 @@
 
             <!-- 3rd project -->
             <div class="project-box grid grid--2-cols">
-              <picture class="img-box">
+              <picture class="img-box img--box-third">
+                <ion-icon
+                  class="preview-img prev-3"
+                  name="repeat-outline"
+                ></ion-icon>
                 <img
-                  src="images/buisier-img.webp"
-                  class="project-img"
-                  alt="Buisier preview"
+                  src="images/easybank-desktop.webp"
+                  class="project-img third"
+                  alt="Easybank preview"
                 />
               </picture>
               <div class="text-box">
                 <div class="heading-box">
-                  <h4 class="heading-quaternary">Buisier Development</h4>
+                  <h4 class="heading-quaternary">Easybank</h4>
                   <p class="subheading">Website Landing Page</p>
                   <p class="text-description">
-                    A challenge for myself, after finishing a course on Udemy, I
-                    tried building my own landing page from scratch. I used CSS
-                    grid and Flex box for the responsive layout.
+                    A challenge I took from Frontend mentor to practice my
+                    layout skills, I used CSS grid and Flex box for the layout
+                    and responsive design.
                   </p>
                 </div>
                 <div class="subheading-box">
@@ -481,13 +534,22 @@
                         class="btn-img"
                         alt="View icon"
                       /> -->
-                      <a href="#" class="btn-img-link">
+                      <a
+                        href="https://easybank-tovvy.netlify.app/"
+                        target="_blank"
+                        class="btn-img-link"
+                      >
                         <ion-icon
                           class="btn-img"
                           name="arrow-forward-circle-outline"
                         ></ion-icon>
                       </a>
-                      <a href="#" class="project-link">View live site</a>
+                      <a
+                        href="https://easybank-tovvy.netlify.app/"
+                        target="_blank"
+                        class="project-link"
+                        >View live site</a
+                      >
                     </div>
 
                     <div class="btn-view">
@@ -496,10 +558,19 @@
                         class="btn-img"
                         alt="View icon"
                       /> -->
-                      <a href="#" class="btn-img-link">
+                      <a
+                        href="https://github.com/tovvydumaplin/EasyBank.git"
+                        target="_blank"
+                        class="btn-img-link"
+                      >
                         <ion-icon class="btn-img" name="logo-github"></ion-icon>
                       </a>
-                      <a href="#" class="project-link">View in GitHub</a>
+                      <a
+                        href="https://github.com/tovvydumaplin/EasyBank.git"
+                        target="_blank"
+                        class="project-link"
+                        >View in GitHub</a
+                      >
                     </div>
                   </div>
                 </div>

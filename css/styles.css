@@ -100,6 +100,55 @@
   opacity: 1;
 }
 
+/* .view-1:link,
+.view-1:visited,
+.view-2:link,
+.view-2:visited,
+.view-3:link,
+.view-3:visited {
+  position: relative;
+}
+.view-1:link::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  transform: translateY(300%);
+
+  transition: ease-in-out 0.3s;
+}
+.view-2:link::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  transform: translateY(300%);
+
+  transition: ease-in-out 0.3s;
+}
+.view-3:link::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  transform: translateY(300%);
+
+  transition: ease-in-out 0.3s;
+}
+
+.current-view.view-1:link::before,
+.current-view.view-2:link::before,
+.current-view.view-3:link::before {
+  width: 100%;
+  opacity: 1;
+} */
+
 .nav-item:hover {
   color: #228be6;
 }
@@ -263,8 +312,47 @@
 .down-icon {
   color: #000;
   transition: all 0.3s ease-in-out;
-  /* width: 2rem;
-  height: 2rem; */
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav--item-spec:link,
+.nav--item-spec:visited {
+  position: relative;
+}
+
+.nav--item-spec:link::before {
+  content: "";
+  position: absolute;
+  background-color: #228be6;
+  width: 0%;
+  height: 0.2rem;
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.3s;
+}
+
+.flex-last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+
+/* Gumana to dahil nauna yung icon element, pero sa looks, kailangan
+gamitan ng flex-direction: row-reverse; para makuha ang desired output */
+.down-icon:hover + .nav--item-spec:link::before {
+  width: 100%;
+}
+
+.down-icon:hover + .nav--item-spec:link,
+.down-icon:hover + .nav--item-spec:visited {
+  color: #228be6;
+}
+.sticky .down-icon:hover + .nav--item-spec:link,
+.sticky .down-icon:hover + .nav--item-spec:visited {
+  color: #fff;
 }
 
 .down-icon:hover {
@@ -520,6 +608,7 @@
   padding: 6rem 2rem 6rem 3.5rem;
   border-right: 2rem solid #228be6;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 .project-box .subheading {
@@ -540,6 +629,110 @@
 
 .project-box .text-box {
   margin-top: 3rem;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+.img-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  border-radius: 0.5rem;
+  opacity: 0;
+  background-image: linear-gradient(to right, #0000006c, #0000006c);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.img--box-first::after,
+.img--box-second::after,
+.img--box-third::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  border-radius: 0.5rem;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  /* transform: translateX(-100%); */
+  left: 0;
+  top: 0;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.img--box-first::after {
+  background-image: url(../images/loopstudio-img-mbl.webp);
+}
+
+.img--box-second::after {
+  background-image: url(../images/omnifood-img-mbl.webp);
+}
+
+.img--box-third::after {
+  background-image: url(../images/easybank-mobile.webp);
+}
+
+.preview-img {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 1rem;
+  right: 1rem;
+  color: transparent;
+
+  z-index: 9999;
+  padding: 1.5rem 1.5rem;
+  transform: all 0.3s ease-in-out;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.preview-img:hover {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: inset 0 0.1rem 2rem #fffffff3;
+}
+
+.img-box:hover:before {
+  opacity: 1;
+}
+
+.img-box:hover .preview-img {
+  color: #fff;
+  transform: all 0.3s ease-in-out;
+}
+
+.img--box-first:hover::after,
+.img--box-second:hover::after,
+.img--box-third:hover::after {
+  filter: brightness(80%);
+}
+
+.zoom .first,
+.zoom .second,
+.zoom .third {
+  /* transform: translateX(100%); */
+  opacity: 0;
+  /* transform: scale(-1); */
+  transition: all 0.3s ease-in-out;
+  /* background-image: none; */
+}
+
+.zoom.img-box::after {
+  /* transform: translate(0); */
+  opacity: 1;
+}
+
+.zoom .preview-image::before {
 }
 
 .tag-box {
