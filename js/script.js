@@ -55,6 +55,13 @@ const imgBoxThird = document.querySelector(".img--box-third");
 previewImg3.addEventListener("click", function () {
   imgBoxThird.classList.toggle("zoom");
 });
+// IMAGE ZOOM 3
+const previewImg4 = document.querySelector(".prev-4");
+const imgBoxFourth = document.querySelector(".img--box-fourth");
+
+previewImg4.addEventListener("click", function () {
+  imgBoxFourth.classList.toggle("zoom");
+});
 
 // CLOSE DROP DOWN UPON SCROLL
 let lastKnownScrollPosition = 0;
