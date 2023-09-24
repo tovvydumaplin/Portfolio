@@ -21,6 +21,8 @@
       rel="stylesheet"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -29,12 +31,18 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
+
     <script defer src="js/script.js"></script>
 
     <title>Tovvy Dumaplin &mdash; Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <header
+      class="header"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+      data-aos-delay="500"
+    >
       <div class="logo-box">
         <!-- <img src="images/t-logo.png" class="logo" alt="Logo of the page" /> -->
         <a href="#" class="logo"><span>T.Dumaplin</span></a>
@@ -105,14 +113,41 @@
         <div class="container grid grid--2-cols pos-rel">
           <div class="hero-text-box">
             <div class="hero-text">
-              <p class="hero-subheading">Hi, my name is</p>
-              <h1 class="heading-primary">Tovvy Dumaplin</h1>
-              <p class="hero-description margin-btm-md">
+              <p
+                class="hero-subheading"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="200"
+              >
+                Hi, my name is
+              </p>
+              <h1
+                class="heading-primary"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="400"
+              >
+                Tovvy Dumaplin
+              </h1>
+              <p
+                class="hero-description margin-btm-md"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="600"
+              >
                 I'm a self-taught web developer and I like creating things for
                 the web.
               </p>
             </div>
-            <div class="hero-btn-box margin-btm-md">
+            <div
+              class="hero-btn-box margin-btm-md"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="800"
+            >
               <a href="#cta" class="btn-primary">Get in touch</a>
               <a
                 href="Resume_Tovvy_Dumaplin.pdf"
@@ -126,6 +161,9 @@
                 href="https://www.facebook.com/tovvy.dumaplin"
                 class="icon-link"
                 target="_blank"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="900"
               >
                 <ion-icon class="icon" name="logo-facebook"></ion-icon>
               </a>
@@ -133,6 +171,9 @@
                 href="https://www.instagram.com/tovvy_/"
                 target="_blank"
                 class="icon-link"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="1100"
               >
                 <ion-icon class="icon" name="logo-instagram"></ion-icon>
               </a>
@@ -140,6 +181,9 @@
                 href="https://www.linkedin.com/in/tovvy-dumaplin-3243ba187/"
                 target="_blank"
                 class="icon-link"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="1300"
               >
                 <ion-icon class="icon" name="logo-linkedin"></ion-icon>
               </a>
@@ -147,13 +191,21 @@
                 href="https://github.com/tovvydumaplin"
                 target="_blank"
                 class="icon-link"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="1500"
               >
                 <ion-icon class="icon" name="logo-github"></ion-icon>
               </a>
             </div>
           </div>
 
-          <div class="hero-image-box">
+          <div
+            class="hero-image-box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <picture>
               <!-- <source srcset="images/hero-img.webp" type="image/webp" /> -->
               <img
@@ -168,16 +220,26 @@
 
       <section class="section-about" id="about">
         <div class="container">
-          <h2 class="heading-secondary margin-btm-sm">About me</h2>
+          <h2
+            class="heading-secondary margin-btm-sm"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            About me
+          </h2>
           <div class="about-box grid grid--2-cols">
-            <div class="image-box">
+            <div
+              class="image-box"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <img
                 src="images/tovvy-img.webp"
                 class="img-profile"
                 alt="Tovvy Dumaplin"
               />
             </div>
-            <div class="text-box">
+            <div class="text-box" data-aos="fade-left" data-aos-duration="2000">
               <h3 class="heading-tertiary">Tovvy B. Dumaplin</h3>
               <p class="subheading margin-btm-sm">Front-end web developer</p>
               <p class="text-description margin-btm-sm">
@@ -204,8 +266,18 @@
       <section class="section-skills" id="skills">
         <div class="container grid grid--2-cols mbl-grid">
           <div class="text-box">
-            <h2 class="heading-secondary">Skills</h2>
-            <p class="text-description">
+            <h2
+              class="heading-secondary"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              Skills
+            </h2>
+            <p
+              class="text-description"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               I am still learning most of the modern technologies but here are
               the technologies I use for development. Frameworks are my next
               target to learn as I know the importance of it specially in
@@ -214,17 +286,33 @@
           </div>
 
           <figure class="image-box grid grid--2-cols">
-            <picture class="img-wrapper">
+            <picture
+              class="img-wrapper"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               <!-- <img src="images/html.png" class="img" alt="HTML logo" /> -->
               <ion-icon class="img" name="logo-html5"></ion-icon>
               <p class="skills-title">Html 5</p>
             </picture>
-            <picture class="img-wrapper translate">
-              <!-- <img src="images/css.png" class="img" alt="CSS logo" /> -->
-              <ion-icon class="img" name="logo-css3"></ion-icon>
-              <p class="skills-title">Css</p>
-            </picture>
-            <picture class="img-wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="900"
+            >
+              <picture class="img-wrapper translate">
+                <!-- <img src="images/css.png" class="img" alt="CSS logo" /> -->
+                <ion-icon class="img" name="logo-css3"></ion-icon>
+                <p class="skills-title">Css</p>
+              </picture>
+            </div>
+            <picture
+              class="img-wrapper"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="700"
+            >
               <!-- <img
                 src="images/javascript.png"
                 class="img"
@@ -233,22 +321,40 @@
               <ion-icon class="img" name="logo-javascript"></ion-icon>
               <p class="skills-title">javaScript</p>
             </picture>
-            <picture class="img-wrapper translate">
-              <!-- <img src="images/figma.png" class="img" alt="Figma logo" /> -->
-              <ion-icon class="img" name="logo-figma"></ion-icon>
-              <p class="skills-title">Figma</p>
-            </picture>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1100"
+            >
+              <picture class="img-wrapper translate">
+                <!-- <img src="images/figma.png" class="img" alt="Figma logo" /> -->
+                <ion-icon class="img" name="logo-figma"></ion-icon>
+                <p class="skills-title">Figma</p>
+              </picture>
+            </div>
           </figure>
         </div>
       </section>
 
       <section class="section-projects" id="projects">
         <div class="container">
-          <h2 class="heading-secondary">Projects</h2>
+          <h2
+            class="heading-secondary"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-anchor-placement="top-center"
+          >
+            Projects
+          </h2>
 
           <article class="projects">
             <!-- 1st project -->
-            <div class="project-box grid grid--2-cols">
+            <div
+              class="project-box grid grid--2-cols"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="top-center"
+            >
               <picture class="img-box img--box-first">
                 <ion-icon
                   class="preview-img prev-1"
@@ -355,7 +461,12 @@
               </div>
             </div>
             <!-- 2nd project -->
-            <div class="project-box grid grid--2-cols">
+            <div
+              class="project-box grid grid--2-cols"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="top-center"
+            >
               <picture class="img-box img--box-second">
                 <ion-icon
                   class="preview-img prev-2"
@@ -467,7 +578,12 @@
             </div>
 
             <!-- 3rd project -->
-            <div class="project-box grid grid--2-cols">
+            <div
+              class="project-box grid grid--2-cols"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="top-center"
+            >
               <picture class="img-box img--box-third">
                 <ion-icon
                   class="preview-img prev-3"
@@ -578,7 +694,12 @@
             </div>
 
             <!-- 4th project -->
-            <div class="project-box grid grid--2-cols">
+            <div
+              class="project-box grid grid--2-cols"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-anchor-placement="top-center"
+            >
               <picture class="img-box img--box-fourth">
                 <ion-icon
                   class="preview-img prev-4"
@@ -750,6 +871,10 @@
       </footer>
     </main>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
