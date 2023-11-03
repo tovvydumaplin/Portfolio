@@ -79,6 +79,7 @@ body {
   max-width: 133.5rem;
   padding: 0 3rem;
   margin: 0 auto;
+    z-index: -1;
 }
 
 .subheading {
