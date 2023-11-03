@@ -441,6 +441,7 @@ gamitan ng flex-direction: row-reverse; para makuha ang desired output */
 /* SECTION HERO */
 .section-hero {
   padding: 5.1rem 0;
+  z-index: -1;
 }
 .section-hero .container {
   max-width: 143.5rem;
