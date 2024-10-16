@@ -570,6 +570,13 @@ body.dark {
 .project__img {
   width: 100%;
 }
+.img__box {
+  transition: all 0.5s ease;
+}
+.img__box:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
 
 .transform__custom {
   transform: translateY(7rem);
