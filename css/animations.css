@@ -1,0 +1,154 @@
+@keyframes burgerAnimationTop {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(1.4rem);
+  }
+  100% {
+    transform: rotate(-40deg) translate(-10px, 10px);
+  }
+}
+@keyframes burgerAnimationBottom {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1.4rem);
+  }
+  100% {
+    transform: rotate(40deg) translate(-9px, -10px);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moonLight {
+  0% {
+    background-color: #3b3b3b;
+    box-shadow: 0 0 0 rgb(255 255 255);
+    opacity: 0%;
+  }
+
+  100% {
+    box-shadow: 0 0 5rem rgb(255 255 255);
+    opacity: 100%;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slidingNameTovvy {
+  0% {
+    top: 0%;
+    right: 0%;
+  }
+  100% {
+    top: 50%;
+    right: 46%;
+  }
+}
+@keyframes slidingNameDumaplin {
+  0% {
+    top: 0%;
+    left: 0;
+    color: #fff;
+  }
+  100% {
+    top: 50%;
+    left: 65%;
+    color: var(--orange-color);
+  }
+}
+@keyframes slidingTovvy {
+  0% {
+    color: var(--stroke-color);
+    transform: translateX(-100%);
+  }
+  100% {
+    color: var(--gray-color);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.header__hamburger.close .top {
+  animation: burgerAnimationTop 0.5s ease;
+}
+
+.header__hamburger.close .bottom {
+  animation: burgerAnimationBottom 0.5s ease;
+}
+
+.star {
+  animation: twinkle 1.5s infinite alternate;
+}
+.dark .section__hero::before {
+  animation: moonLight 1s ease;
+}
+
+.tovvy {
+  animation: slidingNameTovvy 2s ease;
+}
+
+.dumaplin {
+  animation: slidingNameDumaplin 2s ease;
+}
+.tovvy__element {
+  animation: slidingTovvy 2s ease;
+}
+
+.left.open {
+  animation: slide-out-left 1s forwards;
+}
+.right.open {
+  animation: slide-out-right 1s forwards;
+}
+.dark .tovvy__element {
+  animation: roulette 5s forwards;
+}
+.img__scroll {
+  animation: spin 20s linear infinite;
+}
+.text {
+  animation: rotate 20s linear infinite;
+}
