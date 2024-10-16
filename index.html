@@ -983,6 +983,22 @@
         }, 2500);
       }
 
+      function copyOnClick() {
+        const email = document.querySelector(".email__address");
+
+        const textToCopy = email.textContent;
+
+        const textarea = document.createElement("textarea");
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+
+        document.body.removeChild(textarea);
+
+        alert("Text copied to clipboard!");
+      }
+
       function startSlideAnimation() {
         // slide animation
         setTimeout(() => {
@@ -1012,6 +1028,9 @@
           .querySelector(".header__hamburger")
           .addEventListener("click", openSideBar);
         window.addEventListener("scroll", handleScrollEvents);
+        document
+          .querySelector(".email__address")
+          .addEventListener("click", copyOnClick);
         scrollTagline();
         initializeHeaderDarkModeEvents();
       }

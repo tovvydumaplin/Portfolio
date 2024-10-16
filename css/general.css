@@ -617,6 +617,10 @@ body.dark {
   color: var(--white-color);
 }
 
+.email__address {
+  cursor: pointer;
+}
+
 .dark .heading__cta.stroke {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 3px var(--white-color);
@@ -685,6 +689,7 @@ body.dark {
   right: 3px;
   scale: 1.2;
 }
+
 .footer .logo__bottom {
   letter-spacing: 7px;
 }
