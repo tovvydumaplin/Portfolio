@@ -580,6 +580,18 @@
       <section class="section__projects pos__rel">
         <span class="project__stroke pos__abs">front end</span>
         <span class="project__stroke__second pos__abs">back end</span>
+        <div class="hover__text flex flex__column gap__3">
+          <p class="hover__text__title">View This Project</p>
+          <p class="hover__text__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui
+          </p>
+        </div>
         <div class="container project__container pos__rel">
           <div class="title__box project__heading project__title">
             <h2
@@ -595,17 +607,18 @@
           </div>
           <div class="project__box grid grid__2__cols">
             <!-- 1st project -->
-            <div class="project">
-              <div class="img__box">
-                <img
-                  class="project__img"
-                  src="resources/omnifood.jpg"
-                  alt="OmniFood Landing Page"
-                  data-aos="fade-up-right"
-                  data-aos-duration="1000"
-                />
+            <div class="project project1">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img"
+                    src="resources/omnifood.jpg"
+                    alt="OmniFood Landing Page"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                  />
+                </div>
               </div>
-
               <div class="project__title__box">
                 <p class="project__title">OmniFood Landing Page</p>
                 <div class="technology__box flex">
@@ -645,15 +658,17 @@
               </div>
             </div>
             <!-- 2nd project -->
-            <div class="project transform__custom">
-              <div class="img__box">
-                <img
-                  class="project__img"
-                  src="resources/fastcatbook.jpg"
-                  alt="Fastcat Booking Website"
-                  data-aos="fade-up-left"
-                  data-aos-duration="1000"
-                />
+            <div class="project project2 transform__custom">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img"
+                    src="resources/fastcatbook.jpg"
+                    alt="Fastcat Booking Website"
+                    data-aos="fade-up-left"
+                    data-aos-duration="1000"
+                  />
+                </div>
               </div>
               <div class="project__title__box">
                 <p class="project__title">Fastcat Booking Website</p>
@@ -694,16 +709,18 @@
               </div>
             </div>
             <!-- 3rd project -->
-            <div class="project">
-              <div class="img__box">
-                <img
-                  class="project__img easybank"
-                  src="resources/easybank.jpg"
-                  alt="EasyBank Landing Page"
-                  data-aos="fade-right"
-                  data-aos-offset="300"
-                  data-aos-duration="1000"
-                />
+            <div class="project project3">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img easybank"
+                    src="resources/easybank.jpg"
+                    alt="EasyBank Landing Page"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                  />
+                </div>
               </div>
               <div class="project__title__box">
                 <p class="project__title">Easybank Landing Page</p>
@@ -744,16 +761,18 @@
               </div>
             </div>
             <!-- 4th project -->
-            <div class="project transform__custom">
-              <div class="img__box">
-                <img
-                  class="project__img"
-                  src="resources/rob.jpg"
-                  alt="Remaining On Board Monitoring System"
-                  data-aos="fade-left"
-                  data-aos-offset="500"
-                  data-aos-duration="1000"
-                />
+            <div class="project project4 transform__custom">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img"
+                    src="resources/rob.jpg"
+                    alt="Remaining On Board Monitoring System"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="1000"
+                  />
+                </div>
               </div>
               <div class="project__title__box">
                 <p class="project__title">ROB Monitoring System</p>
@@ -971,6 +990,48 @@
       const starsContainer = document.querySelector(".stars");
       const sectionTagline = document.querySelector(".section__tagline");
       const taglineTexts = document.querySelectorAll(".tagline__text");
+      // Mouse Hover
+      // Mouse Hover
+      const hoverText = document.querySelector(".hover__text");
+      const imgBoxes = document.querySelectorAll(".img__box");
+
+      // Array of project descriptions
+      const projectDescriptions = [
+        "Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Project 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Project 3: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Project 4: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      ];
+
+      // Select the hover__text__desc element
+      const hoverTextDesc = document.querySelector(".hover__text__desc");
+
+      // Function to show hover text and update its content
+      const showHoverText = (index) => {
+        hoverTextDesc.textContent = projectDescriptions[index];
+        hoverText.style.opacity = 1; // Show description
+      };
+
+      // Function to hide hover text
+      const hideHoverText = () => {
+        hoverText.style.opacity = 0; // Hide text
+      };
+
+      // Iterate through each imgBox to add event listeners
+      imgBoxes.forEach((imgBox, index) => {
+        imgBox.addEventListener("mouseenter", () => {
+          showHoverText(index); // Show text on mouse enter
+        });
+
+        imgBox.addEventListener("mouseleave", hideHoverText); // Hide text on mouse leave
+
+        // Update hover text position based on mouse movement
+        imgBox.addEventListener("mousemove", (e) => {
+          const { clientX, clientY } = e; // Get mouse coordinates
+          hoverText.style.left = `${clientX}px`; // Set horizontal position
+          hoverText.style.top = `${clientY - 30}px`; // Set vertical position (adjust to prevent overlap)
+        });
+      });
 
       window.addEventListener("load", initializeAnimation);
       document.addEventListener("DOMContentLoaded", initializeEventListeners);

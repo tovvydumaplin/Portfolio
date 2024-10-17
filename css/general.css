@@ -62,7 +62,7 @@ body.dark {
 }
 .tobi__logo__container {
   width: 15rem;
-  height: 15rem;
+  height: 10rem;
 }
 .dark .tobi__logo {
   fill: var(--white-color);
@@ -523,8 +523,42 @@ body.dark {
 .section__projects {
   padding: 12rem 0 19rem 0;
   background-color: var(--black-color);
+  position: relative;
 }
 
+.hover__text {
+  color: #fff;
+
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: transform 0.1s ease;
+  opacity: 0;
+  width: 50rem;
+  padding: 1rem 2rem;
+  background: var(--orange-color);
+  border-radius: 1rem;
+}
+.wrap {
+  overflow: hidden;
+}
+.hover__text__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.hover__text__desc {
+  font-size: 2rem;
+  text-transform: none;
+}
+.img__box:hover {
+  opacity: 80%;
+  transform: scale(1.05);
+  cursor: none;
+  /* display: block; */
+}
 .section__projects .heading__secondary {
   color: #fff;
 }
@@ -572,10 +606,6 @@ body.dark {
 }
 .img__box {
   transition: all 0.5s ease;
-}
-.img__box:hover {
-  opacity: 80%;
-  cursor: pointer;
 }
 
 .transform__custom {
