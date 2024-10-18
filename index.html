@@ -991,11 +991,10 @@
       const sectionTagline = document.querySelector(".section__tagline");
       const taglineTexts = document.querySelectorAll(".tagline__text");
       // Mouse Hover
-      // Mouse Hover
+
       const hoverText = document.querySelector(".hover__text");
       const imgBoxes = document.querySelectorAll(".img__box");
 
-      // Array of project descriptions
       const projectDescriptions = [
         "Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "Project 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -1003,35 +1002,31 @@
         "Project 4: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       ];
 
-      // Select the hover__text__desc element
       const hoverTextDesc = document.querySelector(".hover__text__desc");
 
-      // Function to show hover text and update its content
       const showHoverText = (index) => {
         hoverTextDesc.textContent = projectDescriptions[index];
-        hoverText.style.opacity = 1; // Show description
+        hoverText.style.opacity = 1;
       };
 
-      // Function to hide hover text
       const hideHoverText = () => {
-        hoverText.style.opacity = 0; // Hide text
+        hoverText.style.opacity = 0;
       };
 
-      // Iterate through each imgBox to add event listeners
       imgBoxes.forEach((imgBox, index) => {
         imgBox.addEventListener("mouseenter", () => {
-          showHoverText(index); // Show text on mouse enter
+          showHoverText(index);
         });
 
-        imgBox.addEventListener("mouseleave", hideHoverText); // Hide text on mouse leave
+        imgBox.addEventListener("mouseleave", hideHoverText);
 
-        // Update hover text position based on mouse movement
         imgBox.addEventListener("mousemove", (e) => {
-          const { clientX, clientY } = e; // Get mouse coordinates
-          hoverText.style.left = `${clientX}px`; // Set horizontal position
-          hoverText.style.top = `${clientY - 30}px`; // Set vertical position (adjust to prevent overlap)
+          const { clientX, clientY } = e;
+          hoverText.style.left = `${clientX}px`;
+          hoverText.style.top = `${clientY - 30}px`;
         });
       });
+      // Mouse hover ends
 
       window.addEventListener("load", initializeAnimation);
       document.addEventListener("DOMContentLoaded", initializeEventListeners);
