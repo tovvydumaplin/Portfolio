@@ -591,6 +591,15 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui
           </p>
+          <div class="flex align__cntr gap__1 hover__text__cta__container">
+            <p class="flex align__cntr gap__1 hover__text__cta pos__rel">
+              <ion-icon
+                class="icon__hover__cta"
+                name="expand-outline"
+              ></ion-icon
+              >Click to open project
+            </p>
+          </div>
         </div>
         <div class="container project__container pos__rel">
           <div class="title__box project__heading project__title">
@@ -994,7 +1003,12 @@
 
       const hoverText = document.querySelector(".hover__text");
       const imgBoxes = document.querySelectorAll(".img__box");
-
+      const projectTitles = [
+        "Omnifood Landing Page",
+        "FastCat Booking Website",
+        "Easybank Landing Page",
+        "ROB Monitoring System",
+      ];
       const projectDescriptions = [
         "Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "Project 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -1003,9 +1017,11 @@
       ];
 
       const hoverTextDesc = document.querySelector(".hover__text__desc");
+      const hoverProjTitle = document.querySelector(".hover__text__title");
 
       const showHoverText = (index) => {
         hoverTextDesc.textContent = projectDescriptions[index];
+        hoverProjTitle.textContent = projectTitles[index];
         hoverText.style.opacity = 1;
       };
 

@@ -572,6 +572,18 @@ body.dark {
   font-size: 2.5rem;
   font-weight: 800;
 }
+.hover__text__cta::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+}
+.icon__hover__cta {
+  width: 2rem;
+  height: 2rem;
+}
 .project__tech__title {
   color: var(--white-color);
 }
