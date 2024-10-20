@@ -68,7 +68,7 @@
   }
   100% {
     top: 50%;
-    right: 46%;
+    right: 44%;
   }
 }
 @keyframes slidingNameDumaplin {
@@ -79,7 +79,7 @@
   }
   100% {
     top: 50%;
-    left: 65%;
+    left: 64%;
     color: var(--orange-color);
   }
 }

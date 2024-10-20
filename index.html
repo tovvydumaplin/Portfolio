@@ -1019,14 +1019,28 @@
       const hoverTextDesc = document.querySelector(".hover__text__desc");
       const hoverProjTitle = document.querySelector(".hover__text__title");
 
+      let isHoverTextVisible = false;
+
       const showHoverText = (index) => {
-        hoverTextDesc.textContent = projectDescriptions[index];
-        hoverProjTitle.textContent = projectTitles[index];
-        hoverText.style.opacity = 1;
+        if (!isHoverTextVisible) {
+          hoverTextDesc.textContent = projectDescriptions[index];
+          hoverProjTitle.textContent = projectTitles[index];
+          hoverText.style.opacity = 1;
+          hoverText.style.transform = "scale(1)";
+          isHoverTextVisible = true;
+        }
       };
 
       const hideHoverText = () => {
         hoverText.style.opacity = 0;
+        hoverText.style.transform = "scale(0.8)";
+        isHoverTextVisible = false;
+      };
+
+      const updateHoverTextPosition = (e) => {
+        const { clientX, clientY } = e;
+        hoverText.style.left = `${clientX}px`;
+        hoverText.style.top = `${clientY - 30}px`;
       };
 
       imgBoxes.forEach((imgBox, index) => {
@@ -1037,11 +1051,12 @@
         imgBox.addEventListener("mouseleave", hideHoverText);
 
         imgBox.addEventListener("mousemove", (e) => {
-          const { clientX, clientY } = e;
-          hoverText.style.left = `${clientX}px`;
-          hoverText.style.top = `${clientY - 30}px`;
+          if (isHoverTextVisible) {
+            updateHoverTextPosition(e);
+          }
         });
       });
+
       // Mouse hover ends
 
       window.addEventListener("load", initializeAnimation);
@@ -1145,7 +1160,6 @@
       function addHeaderColor() {
         const header = document.querySelector(".header");
         if (window.scrollY > 0) {
-          // If the page is not at the top
           header.classList.add("bg__gray");
         } else {
           header.classList.remove("bg__gray");
@@ -1160,11 +1174,11 @@
         const scrollTop =
           window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop) {
-          header.style.transform = "translateY(-100%)"; // Hide header
+          header.style.transform = "translateY(-100%)";
         } else {
-          header.style.transform = "translateY(0)"; // Show header
+          header.style.transform = "translateY(0)";
         }
-        lastScrollTop = scrollTop; // Update last scroll position
+        lastScrollTop = scrollTop;
       }
 
       function bodyDark() {

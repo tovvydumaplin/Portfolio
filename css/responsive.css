@@ -156,6 +156,40 @@
   .creator.arrow {
     left: -11rem;
   }
+
+  @keyframes slidingNameTovvy {
+    0% {
+      top: 0%;
+      right: 0%;
+    }
+    100% {
+      top: 50%;
+      right: 44%;
+    }
+  }
+  @keyframes slidingNameDumaplin {
+    0% {
+      top: 0%;
+      left: 0;
+      color: #fff;
+    }
+    100% {
+      top: 50%;
+      left: 68%;
+      color: var(--orange-color);
+    }
+  }
+  .tovvy {
+    top: 50%;
+    right: 44%;
+    z-index: 999;
+  }
+  .dumaplin {
+    top: 50%;
+    left: 68%;
+    color: var(--orange-color);
+    opacity: 100%;
+  }
 }
 /* 1050 PX */
 @media (max-width: 65.625em) {
@@ -285,6 +319,21 @@
   .heading__cta {
     font-size: 5rem;
   }
+
+  .tovvy {
+    top: 50%;
+    right: 44%;
+    z-index: 999;
+    font-size: 7rem;
+  }
+  .dumaplin {
+    top: 50%;
+    left: 68%;
+    color: var(--orange-color);
+    opacity: 100%;
+    font-size: 7rem;
+    z-index: 999;
+  }
 }
 
 /* 660px */
@@ -352,6 +401,20 @@
     text-align: center;
     gap: 1rem;
   }
+  .tovvy {
+    top: 50%;
+    right: 44%;
+    z-index: 999;
+    font-size: 4.5rem;
+  }
+  .dumaplin {
+    top: 50%;
+    left: 68%;
+    color: var(--orange-color);
+    opacity: 100%;
+    font-size: 4.5rem;
+    z-index: 999;
+  }
 }
 /* 430 px */
 @media (max-width: 26.875em) {
@@ -403,5 +466,14 @@
   }
   .header__cta {
     gap: 2rem;
+  }
+}
+/* 340 px */
+@media (max-width: 21.25em) {
+  .tovvy {
+    font-size: 3.5rem;
+  }
+  .dumaplin {
+    font-size: 3.5rem;
   }
 }
