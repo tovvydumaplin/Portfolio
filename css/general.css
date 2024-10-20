@@ -738,6 +738,36 @@ body.dark {
   padding: 2rem 5rem;
   border: 1px solid var(--black-color);
 }
+
+.copied__text {
+  bottom: -3rem;
+  font-weight: 600;
+  color: var(--orange-color);
+
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+.copied__text.show {
+  animation: copiedTextPop 0.5s ease;
+  opacity: 1;
+  scale: 1;
+}
+
+@keyframes copiedTextPop {
+  0% {
+    scale: 0.7;
+    opacity: 0;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
 /* CTA SECTION CSS END */
 /* FOOTER SECTION CSS */
 .footer {
