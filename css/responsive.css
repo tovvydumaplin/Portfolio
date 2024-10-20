@@ -354,6 +354,9 @@
   .creator__tag {
     grid-row: 2;
   }
+  .email__address {
+    font-size: 3rem;
+  }
 }
 /* 500 px */
 @media (max-width: 31.25em) {
