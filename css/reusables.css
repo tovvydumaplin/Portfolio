@@ -1,10 +1,22 @@
 /* REUSABLES */
+.no__scroll {
+  overflow: hidden;
+}
 .heading__primary {
   font-size: 12rem;
   font-weight: 900;
   text-transform: uppercase;
 }
-
+.project__link:link,
+.project__link:visited {
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.project__link:hover,
+.project__link:active {
+}
 .heading__secondary {
   font-weight: 900;
   font-size: 7rem;
@@ -25,6 +37,75 @@
 }
 .btn__primary:hover,
 .btn__primary:active {
+  /* background: linear-gradient(90deg, #f24e1e, #ff8a00); */
+  box-shadow: 0 4px 6px rgba(242, 78, 30, 0.3), 0 1px 3px rgba(242, 78, 30, 0.2);
+}
+.btn__secondary:link,
+.btn__secondary:visited {
+  color: var(--white-color);
+  background-color: var(--black-color);
+
+  padding: 1.8rem 4rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "lexend", sans-serif;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.btn__secondary:hover,
+.btn__secondary:active {
+  /* background: linear-gradient(90deg, #f24e1e, #ff8a00); */
+  box-shadow: 0 4px 6px rgba(242, 78, 30, 0.3), 0 1px 3px rgba(242, 78, 30, 0.2);
+}
+.project__btn__secondary:link,
+.project__btn__secondary:visited {
+  color: var(--white-color);
+  background-color: var(--black-color);
+
+  padding: 1.8rem 4rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "lexend", sans-serif;
+  font-weight: 600;
+  transition: all 0.5s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.project__btn__secondary:hover,
+.project__btn__secondary:active {
+  /* background: linear-gradient(90deg, #f24e1e, #ff8a00); */
+  box-shadow: 0 4px 6px rgba(36, 16, 11, 0.2), 0 1px 3px rgba(36, 16, 11, 0.2);
+}
+.project__btn__primary:link,
+.project__btn__primary:visited {
+  color: var(--white-color);
+  background-color: var(--orange-color);
+
+  padding: 1.8rem 4rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "lexend", sans-serif;
+  font-weight: 600;
+  transition: all 0.5s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.project__btn__primary.hidden {
+  display: none;
+}
+.project__btn__secondary.hidden {
+  display: none;
+}
+.project__btn__primary:hover,
+.project__btn__primary:active {
   /* background: linear-gradient(90deg, #f24e1e, #ff8a00); */
   box-shadow: 0 4px 6px rgba(242, 78, 30, 0.3), 0 1px 3px rgba(242, 78, 30, 0.2);
 }

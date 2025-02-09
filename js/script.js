@@ -192,6 +192,7 @@ function addHeaderColor() {
 window.addEventListener("scroll", addHeaderColor);
 
 let lastScrollTop = 0;
+
 function hideHeader() {
   const header = document.querySelector("header");
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -275,3 +276,249 @@ function moonIconToggle() {
     }, 300);
   }, 300);
 }
+
+const project = document.querySelectorAll(".project");
+console.log(project);
+
+const projects = [
+  {
+    title: "OmniFood Landing Page",
+    subtitle: "Front-end Development",
+    sections: [
+      {
+        heading: "OmniFood Landing Page",
+        subheading: "Front-end Development",
+        description: `A project from the course I took on Udemy. This is a practice project designed to enhance and improve my knowledge of HTML and CSS. OmniFood is a modern, fully responsive landing page for a food delivery service, showcasing clean layouts, intuitive design, and engaging animations. 
+        
+        Through this project, I practiced key front-end development skills such as flexbox, CSS grid, and responsive web design techniques. The goal was to create a visually appealing and user-friendly interface while reinforcing my understanding of modern web development best practices.`,
+
+        image: "omnifood.jpg",
+      },
+      {
+        heading: "Technologies",
+        subheading: "Used in Development",
+        description: `The project is built using HTML, CSS, and JavaScript, but the primary focus is on HTML and CSS to ensure a structured learning path. While JavaScript is included for minor enhancements, the goal is to strengthen my understanding of semantic HTML, modern CSS techniques like flexbox and grid, and responsive design principles. 
+        
+        This project serves as a hands-on practice to refine my front-end development skills and improve my ability to create visually appealing, well-structured web pages.`,
+        image: ["ci4.png", "jquery.png", "css.png", "js.png"],
+        techTitle: ["Code Igniter", "jQuery", "CSS", "JavaScript"],
+      },
+      {
+        heading: "The Impact",
+        subheading: "OmniFood Landing Page",
+        description: `This project gave me a solid understanding of semantic HTML and the power of CSS, particularly with flexbox and grid. Initially, positioning random elements was challenging, especially when ensuring full responsiveness across different screen sizes. However, working through these challenges provided me with a new perspective on web development and strengthened my ability to create well-structured, responsive designs.`,
+        image: "fastcatbook.jpg",
+      },
+      {
+        heading: "What I Learned",
+        subheading: "Personal Growth",
+        description: `This project was a significant learning experience that expanded my knowledge of web development. It taught me how to research new technologies, find solutions to challenges, and select libraries that best fit my needs. Overall, it provided me with a strong foundation in front-end development, helping me gain confidence in structuring and styling web pages effectively.
+
+        Completing this project made me feel more comfortable using HTML and CSS. I also challenged myself further by solving problems from <a class="link__page" href="https://www.frontendmentor.io/profile/tovvydumaplin" target="_blank" rel="noopener noreferrer">Frontend Mentor</a> to enhance my skills.`,
+
+        image: "profile.png",
+        liveLink: "https://omnifood-tovvy.netlify.app/",
+        gitHubLink: "https://github.com/tovvydumaplin/Omnifood",
+      },
+    ],
+  },
+  {
+    title: "Fastcat Booking Website",
+    subtitle: "BACK-END MIGRATION AND FRONT-END DEVELOPMENT",
+    sections: [
+      {
+        heading: "Fastcat Booking Website",
+        subheading: "BACK-END MIGRATION AND FRONT-END DEVELOPMENT",
+        description: `
+        An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.
+        I contributed to the project by migrating back-end functions and developing new features to align with the updated design.
+        
+
+        Before the redesign, the booking website faced several challenges that impacted both the user experience and operational efficiency.
+        The registration process was cumbersome, resulting in emails being unusable after a failed registration.
+        Additionally, the booking pages were confusing for users, making navigation difficult.
+      `,
+
+        image: "fastcatbook.jpg",
+      },
+      {
+        heading: "Technologies",
+        subheading: "Used in Development",
+        description: `The project was built using CodeIgniter 4 as the back-end framework. This framework was chosen for its lightweight structure and ability to easily manage MVC (Model-View-Controller) architecture. On the front end, I integrated jQuery for dynamic form validation and AJAX to enable asynchronous data handling, ensuring smooth, real-time interactions without reloading the page. ion-icons is also used for a quick and easy integration of SVG based icons to modify it easily. `,
+        image: ["ci4.png", "jquery.png", "css.png", "js.png"],
+        techTitle: ["Code Igniter", "jQuery", "CSS", "JavaScript"],
+      },
+      {
+        heading: "The Impact",
+        subheading: "The New Online Booking",
+        description: `With the updates, refactoring, and careful selection of libraries, the online booking system’s speed has improved dramatically. Receiving fewer concerns by the day, thus, returning a more direct output which greatly improves the user experience. The registration process has also greatly improved, reducing user errors and getting great feedback from stakeholders.`,
+        image: "fastcatbook.jpg",
+      },
+      {
+        heading: "What I Learned",
+        subheading: "Personal Growth",
+        description: `This project was a significant learning experience for me. It broadened my understanding of back-end development, as I had primarily focused on front-end development before this project. The development process helped me refine my thought process and taught me the importance of balancing functionality, clean code structure, and seeking support within the team. 
+        
+        
+        Overall, I am proud of the contributions I made to the booking system, resulting in a more efficient and user-friendly platform.`,
+        image: "profile.png",
+        liveLink: "https://fastcat-book.com/",
+        gitHubLink: "#",
+      },
+    ],
+  },
+  {
+    title: "Another Project",
+    subtitle: "Some Subtitle",
+    sections: [
+      {
+        heading: "Overview",
+        subheading: "Project Summary",
+        description: `
+        An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.
+        I contributed to the project by migrating back-end functions and developing new features to align with the updated design.
+        
+
+        Before the redesign, the booking website faced several challenges that impacted both the user experience and operational efficiency.
+        The registration process was cumbersome, resulting in emails being unusable after a failed registration.
+        Additionally, the booking pages were confusing for users, making navigation difficult.
+      `,
+        image: "anotherproject.jpg",
+      },
+      {
+        heading: "Technologies",
+        subheading: "Used in Development",
+        description: `
+        An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.
+        I contributed to the project by migrating back-end functions and developing new features to align with the updated design.
+        
+
+        Before the redesign, the booking website faced several challenges that impacted both the user experience and operational efficiency.
+        The registration process was cumbersome, resulting in emails being unusable after a failed registration.
+        Additionally, the booking pages were confusing for users, making navigation difficult.
+      `,
+        image: "anotherproject.jpg",
+        liveLink: "https://fastcat-book.com/",
+        gitHubLink: "#",
+      },
+    ],
+  },
+];
+// PROJECT SHOWING THE TECHNOLOGIES PART
+// Find the project that has the "Technologies" section
+const techSection = projects.find((project) =>
+  project.sections.some((section) => section.heading === "Technologies")
+);
+
+// Get the images and titles from the "Technologies" section
+const techData = techSection
+  ? techSection.sections.find((section) => section.heading === "Technologies")
+  : { image: [], techTitle: [] };
+
+// Select all existing <img> elements with class "tech__item"
+document.querySelectorAll(".tech__item").forEach((img, index) => {
+  if (techData.image[index]) {
+    img.src = `resources/${techData.image[index]}`;
+  }
+});
+// PROJECT SHOWING THE TECHNOLOGIES PART END
+// Select all existing <p> elements with class "tech__title"
+document.querySelectorAll(".tech__title").forEach((p, index) => {
+  if (techData.techTitle[index]) {
+    p.textContent = techData.techTitle[index];
+  }
+});
+
+function loadProjects(index) {
+  const containerDetails = document.querySelectorAll(
+    ".project__container__details"
+  );
+  const project = projects[index]; // Get the selected project
+
+  project.sections.forEach((section, i) => {
+    if (containerDetails[i]) {
+      // Update heading, subheading, and description
+      containerDetails[i].querySelector(".heading__secondary").textContent =
+        section.heading;
+      containerDetails[i].querySelector(".subheading").textContent =
+        section.subheading;
+      containerDetails[i].querySelector(".project__desc").innerHTML =
+        section.description.replace(/\n/g, "<br>");
+
+      // Update image
+      const imgElement = containerDetails[i].querySelector(
+        ".project__img__modal"
+      );
+      if (imgElement && section.image) {
+        console.log("Updating image:", section.image); // Debugging
+        imgElement.src = `resources/${section.image}`;
+      }
+
+      // Set links on buttons
+      const liveButton = containerDetails[i].querySelector(
+        ".project__btn__primary"
+      );
+      const gitHubButton = containerDetails[i].querySelector(
+        ".project__btn__secondary"
+      );
+
+      if (liveButton) {
+        // Check if the button exists before modifying
+        if (section.liveLink && section.liveLink !== "#") {
+          liveButton.href = section.gitHubLink;
+          liveButton.classList.remove("hidden");
+        } else {
+          liveButton.classList.add("hidden");
+        }
+      }
+
+      if (gitHubButton) {
+        // Check if the button exists before modifying
+        if (section.gitHubLink && section.gitHubLink !== "#") {
+          gitHubButton.href = section.gitHubLink;
+          gitHubButton.classList.remove("hidden");
+        } else {
+          gitHubButton.classList.add("hidden");
+        }
+      }
+    }
+  });
+}
+
+document.querySelectorAll(".project").forEach((item, index) => {
+  item.addEventListener("click", () => {
+    console.log("Project Index Clicked:", index); // Debugging log
+    loadProjects(index);
+    document.querySelector(".cover").classList.add("open");
+    document.querySelector("html").classList.add("no__scroll");
+  });
+});
+
+document
+  .querySelector(".project__icon__close")
+  .addEventListener("click", function () {
+    document.querySelector(".cover").classList.remove("open");
+    document.querySelector("html").classList.remove("no__scroll");
+  });
+
+// scrolling part
+// const container = document.querySelector(".project__view");
+
+// let isScrolling = false;
+
+// container.addEventListener("wheel", (e) => {
+//   e.preventDefault();
+
+//   if (!isScrolling) {
+//     isScrolling = true;
+//     const scrollSpeed = 30; // Adjust for speed
+
+//     requestAnimationFrame(() => {
+//       container.scrollBy({
+//         left: e.deltaY * scrollSpeed,
+//         behavior: "smooth",
+//       });
+//       isScrolling = false;
+//     });
+//   }
+// });
