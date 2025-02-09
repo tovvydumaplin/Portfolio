@@ -465,7 +465,7 @@ function loadProjects(index) {
       if (liveButton) {
         // Check if the button exists before modifying
         if (section.liveLink && section.liveLink !== "#") {
-          liveButton.href = section.gitHubLink;
+          liveButton.href = section.liveLink;
           liveButton.classList.remove("hidden");
         } else {
           liveButton.classList.add("hidden");
