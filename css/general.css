@@ -554,6 +554,7 @@ body.dark {
 .hover__text__desc {
   font-size: 2rem;
   text-transform: none;
+  line-height: 1.6;
 }
 
 .section__projects .heading__secondary {

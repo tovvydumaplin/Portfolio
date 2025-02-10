@@ -24,8 +24,8 @@ const projectTitles = [
   "ROB Monitoring System",
 ];
 const projectDescriptions = [
-  "Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "Project 2: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "Project 1: A personal front-end project that primarily focused in using CSS techniques like Flex and Grid as well as semantic HTML",
+  "Project 2: An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.",
   "Project 3: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   "Project 4: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 ];
@@ -491,6 +491,7 @@ document.querySelectorAll(".project").forEach((item, index) => {
     loadProjects(index);
     document.querySelector(".cover").classList.add("open");
     document.querySelector("html").classList.add("no__scroll");
+    hideHoverText();
   });
 });
 
