@@ -26,8 +26,8 @@ const projectTitles = [
 const projectDescriptions = [
   "Project 1: A personal front-end project that primarily focused in using CSS techniques like Flex and Grid as well as semantic HTML",
   "Project 2: An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.",
-  "Project 3: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-  "Project 4: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "Project 3: A challenge project from Front End Mentor. A landing page created with pure HTML and CSS.",
+  "Project 4: A Remaining Onboard Monitoring System developed for Archipelago Philippine Ferries Corporation. Used in all of the vessel's owned by the company. It exist to make sure no fraud is commited via manual submission.",
 ];
 
 const hoverTextDesc = document.querySelector(".hover__text__desc");
@@ -329,8 +329,7 @@ const projects = [
       {
         heading: "Fastcat Booking Website",
         subheading: "BACK-END MIGRATION AND FRONT-END DEVELOPMENT",
-        description: `
-        An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.
+        description: `An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.
         I contributed to the project by migrating back-end functions and developing new features to align with the updated design.
         
 
@@ -368,36 +367,46 @@ const projects = [
     ],
   },
   {
-    title: "Another Project",
-    subtitle: "Some Subtitle",
+    title: "Easy Bank Landing Page",
+    subtitle: "Front-end Development",
     sections: [
       {
-        heading: "Overview",
-        subheading: "Project Summary",
-        description: `
-        An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.
-        I contributed to the project by migrating back-end functions and developing new features to align with the updated design.
+        heading: "Easy Bank Landing Page",
+        subheading: "Front-end Development",
+        description: `A practice project taken from Front-end mentor. A modern web page for a digital banking site that primarily focused on the distribution of information to attract consumers.
         
 
-        Before the redesign, the booking website faced several challenges that impacted both the user experience and operational efficiency.
-        The registration process was cumbersome, resulting in emails being unusable after a failed registration.
-        Additionally, the booking pages were confusing for users, making navigation difficult.
+        An Intermediate level project, solely based on front end mentor's details. I selected this project due to its elements. This was during the time I was having a hard time on absolute positioning and making it responsive from big screen sizes to smaller screen sizes.
       `,
-        image: "anotherproject.jpg",
+        image: "easybank.jpg",
       },
       {
         heading: "Technologies",
         subheading: "Used in Development",
         description: `
-        An online booking website developed for Archipelago Philippine Ferries Corporation to enhance user experience and drive modernization.
-        I contributed to the project by migrating back-end functions and developing new features to align with the updated design.
-        
+        Built with Semantic HTML, modern css techniques such as Flex box, Grid and JavaScript for some DOM manipulations. This project followed a strict color guides based on its design from figma. Staring with layout and positioning of elements to proper typhography.
 
-        Before the redesign, the booking website faced several challenges that impacted both the user experience and operational efficiency.
-        The registration process was cumbersome, resulting in emails being unusable after a failed registration.
-        Additionally, the booking pages were confusing for users, making navigation difficult.
+        The selection of technologies in this project is very limited due to the fact that this is made during practice/learning stage.
       `,
-        image: "anotherproject.jpg",
+        image: "easybank.jpg",
+        liveLink: "https://fastcat-book.com/",
+        gitHubLink: "#",
+      },
+      {
+        heading: "The Impact",
+        subheading: "Front-end Development",
+        description: `As a beginner, it is truly an amazing task to complete. Learning new techniques, searching for new ideas on how to solve the problem is a really great addition to my knowledge. 
+        
+        Basically, this project gave me a better view on how to take on a challenge.`,
+      },
+      {
+        heading: "What I Learned",
+        subheading: "Personal Growth",
+        description: `This project is a really good start for my web development learning journey. It has given me a huge amount of understanding about absolute positioning. Totally learned how to do it the right way.
+
+        But that's not all. During development is where I learned on how to scour for free images that I can use that will fill the gap of what I'm missing, technically, I didn't add to this project because it will bypass the strict rules, but still, learned a new thing from that.
+        `,
+        image: "profile.png",
         liveLink: "https://fastcat-book.com/",
         gitHubLink: "#",
       },
