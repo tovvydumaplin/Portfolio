@@ -304,7 +304,7 @@ const projects = [
         techTitle: ["Code Igniter", "jQuery", "CSS", "JavaScript"],
       },
       {
-        heading: "The Impact",
+        heading: "The Development Process",
         subheading: "OmniFood Landing Page",
         description: `This project gave me a solid understanding of semantic HTML and the power of CSS, particularly with flexbox and grid. Initially, positioning random elements was challenging, especially when ensuring full responsiveness across different screen sizes. However, working through these challenges provided me with a new perspective on web development and strengthened my ability to create well-structured, responsive designs.`,
         image: "fastcatbook.jpg",
@@ -393,7 +393,7 @@ const projects = [
         gitHubLink: "#",
       },
       {
-        heading: "The Impact",
+        heading: "Purpose and Motivation",
         subheading: "Front-end Development",
         description: `As a beginner, it is truly an amazing task to complete. Learning new techniques, searching for new ideas on how to solve the problem is a really great addition to my knowledge. 
         
@@ -510,6 +510,14 @@ document
     document.querySelector(".cover").classList.remove("open");
     document.querySelector("html").classList.remove("no__scroll");
   });
+
+document.addEventListener("keydown", function (event) {
+  console.log(event.key);
+  if (event.key === "Escape") {
+    document.querySelector(".cover").classList.remove("open");
+    document.querySelector("html").classList.remove("no__scroll");
+  }
+});
 
 // scrolling part
 // const container = document.querySelector(".project__view");
