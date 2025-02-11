@@ -301,7 +301,7 @@ const projects = [
         
         This project serves as a hands-on practice to refine my front-end development skills and improve my ability to create visually appealing, well-structured web pages.`,
         image: ["ci4.png", "jquery.png", "css.png", "js.png"],
-        techTitle: ["Code Igniter", "jQuery", "CSS", "JavaScript"],
+        techTitle: ["Code Igniter", "Query", "CSS", "JavaScript"],
       },
       {
         heading: "The Development Process",
@@ -388,9 +388,53 @@ const projects = [
 
         The selection of technologies in this project is very limited due to the fact that this is made during practice/learning stage.
       `,
-        image: "easybank.jpg",
+        image: ["ci4.png", "jquery.png", "css.png", "js.png"],
+        techTitle: ["Code Igniter", "jQuery", "CSS", "JavaScript"],
+      },
+      {
+        heading: "Purpose and Motivation",
+        subheading: "Front-end Development",
+        description: `As a beginner, it is truly an amazing task to complete. Learning new techniques, searching for new ideas on how to solve the problem is a really great addition to my knowledge. 
+        
+        Basically, this project gave me a better view on how to take on a challenge.`,
+      },
+      {
+        heading: "What I Learned",
+        subheading: "Personal Growth",
+        description: `This project is a really good start for my web development learning journey. It has given me a huge amount of understanding about absolute positioning. Totally learned how to do it the right way.
+
+        But that's not all. During development is where I learned on how to scour for free images that I can use that will fill the gap of what I'm missing, technically, I didn't add to this project because it will bypass the strict rules, but still, learned a new thing from that.
+        `,
+        image: "profile.png",
         liveLink: "https://fastcat-book.com/",
         gitHubLink: "#",
+      },
+    ],
+  },
+  {
+    title: "Remaining Onboard Monitoring System",
+    subtitle: "Front-end Back-end Development",
+    sections: [
+      {
+        heading: "Remaining Onboard Monitoring System",
+        subheading: "Front-end Back-end Development",
+        description: `A practice project taken from Front-end mentor. A modern web page for a digital banking site that primarily focused on the distribution of information to attract consumers.
+        
+
+        An Intermediate level project, solely based on front end mentor's details. I selected this project due to its elements. This was during the time I was having a hard time on absolute positioning and making it responsive from big screen sizes to smaller screen sizes.
+      `,
+        image: "rob.jpg",
+      },
+      {
+        heading: "Technologies",
+        subheading: "Used in Development",
+        description: `
+        Built with Semantic HTML, modern css techniques such as Flex box, Grid and JavaScript for some DOM manipulations. This project followed a strict color guides based on its design from figma. Staring with layout and positioning of elements to proper typhography.
+
+        The selection of technologies in this project is very limited due to the fact that this is made during practice/learning stage.
+      `,
+        image: ["php.png", "jquery.png", "css.png", "js.png"],
+        techTitle: ["PHP Core", "jQuery", "CSS", "JavaScript"],
       },
       {
         heading: "Purpose and Motivation",
@@ -415,28 +459,6 @@ const projects = [
 ];
 // PROJECT SHOWING THE TECHNOLOGIES PART
 // Find the project that has the "Technologies" section
-const techSection = projects.find((project) =>
-  project.sections.some((section) => section.heading === "Technologies")
-);
-
-// Get the images and titles from the "Technologies" section
-const techData = techSection
-  ? techSection.sections.find((section) => section.heading === "Technologies")
-  : { image: [], techTitle: [] };
-
-// Select all existing <img> elements with class "tech__item"
-document.querySelectorAll(".tech__item").forEach((img, index) => {
-  if (techData.image[index]) {
-    img.src = `resources/${techData.image[index]}`;
-  }
-});
-// PROJECT SHOWING THE TECHNOLOGIES PART END
-// Select all existing <p> elements with class "tech__title"
-document.querySelectorAll(".tech__title").forEach((p, index) => {
-  if (techData.techTitle[index]) {
-    p.textContent = techData.techTitle[index];
-  }
-});
 
 function loadProjects(index) {
   const containerDetails = document.querySelectorAll(
@@ -501,6 +523,36 @@ document.querySelectorAll(".project").forEach((item, index) => {
     document.querySelector(".cover").classList.add("open");
     document.querySelector("html").classList.add("no__scroll");
     hideHoverText();
+
+    // Changing the Technologies used section on modal
+    // Get the selected project based on index
+    const selectedProject = projects[index];
+
+    // Find the "Technologies" section within the selected project
+    const techSection = selectedProject.sections.find(
+      (section) => section.heading === "Technologies"
+    );
+
+    // Get the images and titles from the "Technologies" section
+    const techData = techSection ? techSection : { image: [], techTitle: [] };
+
+    // Select all existing <img> elements with class "tech__item"
+    document.querySelectorAll(".tech__item").forEach((img, idx) => {
+      if (techData.image[idx]) {
+        img.src = `resources/${techData.image[idx]}`;
+      } else {
+        img.src = ""; // Clear image if no data
+      }
+    });
+
+    // Select all existing <p> elements with class "tech__title"
+    document.querySelectorAll(".tech__title").forEach((p, idx) => {
+      if (techData.techTitle[idx]) {
+        p.textContent = techData.techTitle[idx];
+      } else {
+        p.textContent = ""; // Clear text if no data
+      }
+    });
   });
 });
 
