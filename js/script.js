@@ -277,6 +277,19 @@ function moonIconToggle() {
   }, 300);
 }
 
+document.querySelectorAll(".project__gallery__img").forEach((img) => {
+  img.addEventListener("click", function (event) {
+    event.stopPropagation();
+    this.classList.toggle("open__gallery");
+  });
+});
+
+document.querySelector(".cover").addEventListener("click", function () {
+  document.querySelectorAll(".project__gallery__img").forEach((img) => {
+    img.classList.remove("open__gallery");
+  });
+});
+
 // scrolling part
 // const container = document.querySelector(".project__view");
 
@@ -298,3 +311,5 @@ function moonIconToggle() {
 //     });
 //   }
 // });
+
+console.log("%c Hello there!%", `background-color: red; padding: 4px;`);

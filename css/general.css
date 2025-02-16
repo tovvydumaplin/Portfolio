@@ -367,7 +367,87 @@ body.dark {
   width: 100%;
   height: 100%;
 }
-
+.card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+  width: 100%;
+}
+.card__learning {
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  width: 100%;
+  max-width: 184.6rem;
+  margin: 0 auto;
+  padding: 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: var(--white-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Black overlay with transparency */
+  backdrop-filter: blur(10px); /* Blurred effect */
+  z-index: 9; /* Ensures it appears behind the modal */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.learning__heading {
+  max-width: 40.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: var(--black-color);
+  font-size: 2.1rem;
+}
+.learning__subheading {
+  font-family: "Lexend", sans-serif;
+}
+.learning__progess__button {
+  display: flex;
+  justify-content: space-between;
+}
+.progress__bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: var(--circle-color);
+  position: relative;
+}
+.progress__fill {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.5rem;
+  background-color: var(--orange-color);
+  width: 20%;
+}
 /* ABOUT ME SECTION CSS END */
 /* TAG LINE SECTION CSS */
 .section__tagline {
@@ -616,6 +696,18 @@ body.dark {
   width: 100%;
 }
 /* Project View */
+
+.project__gallery__img {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.project__gallery__img.open__gallery {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1.05);
+}
 .project__gallery__container {
   grid-column: span 2;
 }
@@ -625,6 +717,7 @@ body.dark {
   gap: 2rem;
   width: 100%;
   margin-top: 4rem;
+  position: relative;
 }
 .project__gallery__img {
   width: 100%;

@@ -43,6 +43,16 @@ const projects = [
         liveLink: "https://omnifood-tovvy.netlify.app/",
         gitHubLink: "https://github.com/tovvydumaplin/Omnifood",
       },
+      {
+        heading: "Project Gallery",
+        subheading: "Project Gallery",
+        imageGallery: [
+          "omni-food-gallery1.png",
+          "omni-food-gallery2.png",
+          "omni-food-gallery3.png",
+          "omni-food-gallery4.png",
+        ],
+      },
     ],
   },
   {
@@ -92,6 +102,16 @@ const projects = [
         image: "profile.png",
         liveLink: "https://fastcat-book.com/",
         gitHubLink: "#",
+      },
+      {
+        heading: "Project Gallery",
+        subheading: "Project Gallery",
+        imageGallery: [
+          "fastcatbook-gallery1.png",
+          "fastcatbook-gallery2.png",
+          "fastcatbook-gallery3.png",
+          "fastcatbook-gallery4.png",
+        ],
       },
     ],
   },
@@ -244,6 +264,16 @@ const projects = [
         liveLink: "#",
         gitHubLink: "#",
       },
+      {
+        heading: "Project Gallery",
+        subheading: "Project Gallery",
+        imageGallery: [
+          "rob-gallery1.png",
+          "rob-gallery2.png",
+          "rob-gallery3.png",
+          "rob-gallery4.png",
+        ],
+      },
     ],
   },
 ];
@@ -377,4 +407,92 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     closeProjectModal();
   }
+});
+
+// about
+document.addEventListener("DOMContentLoaded", function () {
+  const courses = [
+    {
+      title: "Build Responsive Real-World Websites with HTML and CSS",
+      instructor: "Jonas Schmedtmann",
+      progress: 100,
+      certificateLink: "#",
+    },
+    {
+      title: "The Complete JavaScript Course 2025: From Zero to Expert!",
+      instructor: "Jonas Schmedtmann",
+      progress: 30,
+      certificateLink: "#",
+    },
+    {
+      title: "Web Design for Web Developers: Build Beautiful Websites!",
+      instructor: "Jonas Schmedtmann",
+      progress: 100,
+      certificateLink: "#",
+    },
+    {
+      title: "The Ultimate React Course 2024: React, Next.js, Redux & More",
+      instructor: "Jonas Schmedtmann",
+      progress: 1,
+      certificateLink: "#",
+    },
+    {
+      title: "The Complete Full-Stack Web Development Bootcamp",
+      instructor: "Dr. Angela Yu",
+      progress: 20,
+      certificateLink: "#",
+    },
+  ];
+
+  const displayLearning = function () {
+    const modal = document.querySelector(".learning__progress");
+
+    // Create a container for all cards
+    const container = document.createElement("div");
+    container.classList.add("card__container");
+
+    courses.forEach((course) => {
+      const card = document.createElement("div");
+      card.classList.add("card__learning");
+
+      card.innerHTML = `
+        <p class="learning__heading">${course.title}</p>
+        <p class="learning__subheading">${course.instructor}</p>
+        <div class="progress__bar">
+          <div class="progress__fill" style="width: ${course.progress}%"></div>
+        </div>
+        <div class="learning__progess__button">
+          <p class="learning__progess__text">${course.progress}% Complete</p>
+          <a href="${course.certificateLink}" class="link">View Certificate</a>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+    // Append the dynamically created container to the modal
+    modal.appendChild(container);
+  };
+  displayLearning();
+
+  const openLearningModal = function () {
+    document.querySelector(".overlay").classList.add("open");
+    document.querySelector(".modal").classList.add("open");
+  };
+  const closeLearningModal = function () {
+    document.querySelector(".overlay").classList.remove("open");
+    document.querySelector(".modal").classList.remove("open");
+  };
+  document
+    .querySelector(".learning__btn")
+    .addEventListener("click", function () {
+      openLearningModal();
+    });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeLearningModal();
+    }
+  });
+  document.querySelector(".overlay").addEventListener("click", function () {
+    closeLearningModal();
+  });
 });
