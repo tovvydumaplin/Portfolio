@@ -408,7 +408,32 @@ document.addEventListener("keydown", function (event) {
     closeProjectModal();
   }
 });
+// const containerDetails = document.querySelectorAll(
+//   ".project__container__details"
+// );
+// const project = projects[index]; // Get the selected project
 
+// project.sections.forEach((section, i) => {
+//   if (containerDetails[i]) {
+//     // Update heading, subheading, and description
+//     containerDetails[i].querySelector(".heading__secondary").textContent =
+//       section.heading;
+//     containerDetails[i].querySelector(".subheading").textContent =
+//       section.subheading;
+//     containerDetails[i].querySelector(".project__desc").innerHTML =
+//       section.description?.replace(/\n/g, "<br>");
+
+const aboutTovvy = {
+  name: "Tovvy Dumaplin",
+  occupation: "Junior Developer",
+  address: "City of San Pedro, Laguna",
+  description: `Hi, I’m <strong>Tovvy Dumaplin</strong>, a <strong>dedicated Web Developer</strong> from <strong>San Pedro, Laguna</strong>, with a deep passion for crafting responsive, user-friendly websites and delivering tailored solutions for businesses. I earned my <strong>Bachelor’s Degree in Information Technology</strong> from the <strong>University of Perpetual Help System - Jonelta </strong> in City of Biñan, Laguna.
+    
+    As a <strong>Full-Time Junior Developer</strong>, I have hands-on experience in <strong>system modifications, system development, enhancements, and database restructuring/partitioning</strong>. I take pride in building scalable systems and optimizing data architectures to improve performance and functionality.`,
+};
+console.log(aboutTovvy.description);
+const textDescMe = document.querySelector(".my__desc");
+textDescMe.innerHTML = aboutTovvy.description?.replace(/\n/g, "<br>");
 // about
 document.addEventListener("DOMContentLoaded", function () {
   const courses = [
