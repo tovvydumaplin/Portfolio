@@ -357,32 +357,91 @@ document.querySelector("body").addEventListener("keydown", function (event) {
   }
 });
 
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
-console.log("%c Hello there!%", `background-color: red; padding: 4px;`);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
+console.log(
+  "%c Hello there!%",
+  `background-color: orange; padding: 10px; box-sizing: border-box;`
+);
