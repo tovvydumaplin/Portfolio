@@ -397,6 +397,29 @@
 .dark .social__link:visited {
   color: var(--white-color);
 }
+.social {
+  transition: all 0.3s ease;
+}
+.social:link,
+.social:visited {
+  text-decoration: none;
+  color: var(--black-color);
+  transition: all 0.3s ease;
+}
+.social:hover,
+.social:active {
+  color: var(--orange-color);
+}
+.menu__link:link,
+.menu__link:visited {
+  text-decoration: none;
+  color: var(--black-color);
+  transition: all 0.3s ease;
+}
+.menu__link:hover,
+.menu__link:active {
+  color: var(--orange-color);
+}
 
 /* .stroke__element__small {
   display: none;

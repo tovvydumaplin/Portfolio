@@ -566,14 +566,6 @@ const closeLearningModal = function () {
   document.querySelector(".overlay").classList.remove("open");
   document.querySelector(".modal").classList.remove("open");
 };
-// Removing no scroll for hmtl
-const removeNoScroll = function () {
-  document.querySelector("html").classList.remove("no__scroll");
-};
-// Adding no scroll for hmtl
-const addNoScroll = function () {
-  document.querySelector("html").classList.add("no__scroll");
-};
 
 //---------------- FUNCTION CALLS ----------------//
 

@@ -182,6 +182,13 @@ function openSideBar() {
   headerHamburger.classList.toggle("close");
 }
 
+const closeSideBar = function () {
+  const sideBar = document.querySelector(".sidebar__wrapper");
+  const headerHamburger = document.querySelector(".header__hamburger");
+  sideBar.classList.remove("open");
+  headerHamburger.classList.remove("close");
+};
+
 function addHeaderColor() {
   const header = document.querySelector(".header");
   if (window.scrollY > 0) {
@@ -313,5 +320,41 @@ document.querySelector(".cover").addEventListener("click", function () {
 //     });
 //   }
 // });
+// Removing no scroll for hmtl
+const removeNoScroll = function () {
+  document.querySelector("html").classList.remove("no__scroll");
+};
+// Adding no scroll for hmtl
+const addNoScroll = function () {
+  document.querySelector("html").classList.add("no__scroll");
+};
+
+const toggleScroll = function () {
+  document.querySelector("html").classList.toggle("no__scroll");
+};
+const removeHeaderColor = function () {
+  document.querySelector(".header").classList.remove("bg__gray");
+};
+
+document
+  .querySelector(".header__hamburger")
+  .addEventListener("click", function () {
+    toggleScroll();
+    removeHeaderColor();
+  });
+
+document.querySelectorAll(".menu__link").forEach((link) => {
+  link.addEventListener("click", function () {
+    openSideBar();
+  });
+});
+
+document.querySelector("body").addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    removeNoScroll();
+    closeSideBar();
+    addHeaderColor();
+  }
+});
 
 console.log("%c Hello there!%", `background-color: red; padding: 4px;`);

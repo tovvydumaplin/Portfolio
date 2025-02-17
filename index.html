@@ -89,10 +89,14 @@
     <aside class="sidebar pos__rel">
       <div class="sidebar__wrapper">
         <ul class="sidebar__items">
-          <li class="item">About me</li>
-          <li class="item">Skills</li>
-          <li class="item">Projects</li>
-          <li class="item">Reach out</li>
+          <li class="item"><a href="#about" class="menu__link">About me</a></li>
+          <li class="item"><a href="#skills" class="menu__link">Skills</a></li>
+          <li class="item">
+            <a href="#projects" class="menu__link">Projects</a>
+          </li>
+          <li class="item">
+            <a href="#reach" class="menu__link">Reach out</a>
+          </li>
         </ul>
       </div>
     </aside>
@@ -236,7 +240,7 @@
           </div>
         </div>
       </section>
-      <section class="section__about pos__rel">
+      <section id="about" class="section__about pos__rel">
         <span class="stroke__element__small pos__abs">developer</span>
         <div
           class="container grid grid__2__cols column__gap__6 align__cntr pos__rel index__1"
@@ -384,7 +388,7 @@
           </div>
         </div>
       </section>
-      <section class="section__skills pos__rel">
+      <section id="skills" class="section__skills pos__rel">
         <span class="skill__stroke pos__abs"></span>
         <div class="container flex flex__column pos__rel">
           <div
@@ -941,7 +945,7 @@
           </div>
         </div>
       </section>
-      <section class="section__cta">
+      <section id="reach" class="section__cta">
         <div
           class="container flex align__cntr flex__column align__text__center gap__5 pos__rel"
         >
@@ -958,7 +962,9 @@
             </p>
           </div>
           <div class="social__box">
-            <div
+            <a
+              href="https://www.facebook.com/tovvy.dumaplin/"
+              target="_blank"
               class="social flex align__cntr"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -969,8 +975,10 @@
                 name="logo-facebook"
               ></ion-icon>
               facebook
-            </div>
-            <div
+            </a>
+            <a
+              href="https://www.instagram.com/tovvy_/"
+              target="_blank"
               class="social flex align__cntr"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -981,8 +989,10 @@
                 name="logo-instagram"
               ></ion-icon>
               instagram
-            </div>
-            <div
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tovvy-dumaplin/"
+              target="_blank"
               class="social flex align__cntr"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -993,8 +1003,10 @@
                 name="logo-linkedin"
               ></ion-icon>
               linkedin
-            </div>
-            <div
+            </a>
+            <a
+              href="https://github.com/tovvydumaplin"
+              target="_blank"
               class="social flex align__cntr"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -1002,7 +1014,7 @@
             >
               <ion-icon class="social__icon__cta" name="logo-github"></ion-icon>
               github
-            </div>
+            </a>
           </div>
           <h3
             class="email__address"

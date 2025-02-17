@@ -393,7 +393,7 @@ body.dark {
   width: 100%;
   max-width: 184.6rem;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 5rem 5rem 20rem 5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   position: fixed;
