@@ -489,6 +489,44 @@ showDetailsTovvy();
 showLinksTovvy();
 
 // about
+const tagLine = [
+  {
+    title: "Learner.",
+    description:
+      "I am a learner. Like most developers, I always try to stay on track when it comes to web development.",
+  },
+  {
+    title: "enjoyer.",
+    description:
+      "I enjoy taking on new things, even when faced with a difficult task or challenge",
+  },
+  {
+    title: "explorer.",
+    description:
+      "I am curious, so I constantly explore new things and try to create something with them.",
+  },
+  {
+    title: "creator.",
+    description:
+      "I create things that live on the web, and it's something I've always enjoyed.",
+  },
+];
+
+const loadTagLine = function () {
+  const taglineSection = document.querySelector(".section__tagline");
+  const descriptions = taglineSection.querySelectorAll(".text__description");
+  const title = taglineSection.querySelectorAll(".tagline__text");
+
+  title.forEach((el, i) => {
+    if (tagLine[i]) {
+      el.innerHTML = tagLine[i].title;
+      descriptions[i].innerHTML = tagLine[i].description;
+    }
+  });
+};
+
+loadTagLine();
+
 document.addEventListener("DOMContentLoaded", function () {
   const courses = [
     {
