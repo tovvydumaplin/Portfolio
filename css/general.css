@@ -625,6 +625,7 @@ body.dark {
 }
 .wrap {
   overflow: hidden;
+  border-radius: 1rem;
 }
 .hover__text__title {
   text-transform: uppercase;
@@ -686,6 +687,7 @@ body.dark {
 
 .img__box {
   width: 100%;
+  border-radius: 1rem;
 }
 
 .project__box {
@@ -694,6 +696,7 @@ body.dark {
 }
 .project__img {
   width: 100%;
+  border-radius: 1rem;
 }
 /* Project View */
 
