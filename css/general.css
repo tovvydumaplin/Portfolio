@@ -422,16 +422,19 @@ body.dark {
 .learning__heading {
   max-width: 40.7rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--black-color);
   font-size: 2.1rem;
+  line-height: 1.3;
 }
 .learning__subheading {
   font-family: "Lexend", sans-serif;
+  margin-bottom: 1rem;
 }
 .learning__progess__button {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 .progress__bar {
   height: 0.5rem;
@@ -447,6 +450,32 @@ body.dark {
   height: 0.5rem;
   background-color: var(--orange-color);
   width: 20%;
+}
+.certificate__link:link,
+.certificate__link:visited {
+  text-decoration: none;
+  color: var(--orange-color);
+  font-weight: 600;
+}
+.certificate__link:hover,
+.certificate__link:active {
+  text-decoration: underline;
+}
+.img__udemy {
+  width: 2.1rem;
+}
+
+.learning__heading__box.grid {
+  grid-template-columns: 1.5fr 0.5fr;
+}
+.learning__icon__close {
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+}
+.learning__heading__title {
+  display: flex;
+  justify-content: space-between;
 }
 /* ABOUT ME SECTION CSS END */
 /* TAG LINE SECTION CSS */

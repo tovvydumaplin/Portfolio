@@ -13,7 +13,7 @@ const projects = [
 
         Through this project, I practiced key <strong>front-end development skills</strong> such as <strong>flexbox, CSS grid</strong>, and <strong>responsive web design techniques</strong>. The goal was to create a <strong>visually appealing and user-friendly interface</strong> while reinforcing my understanding of <strong>modern web development best practices</strong>.`,
 
-        image: "omnifood.jpg",
+        image: "omnifood.webp",
       },
       {
         heading: "Technologies",
@@ -30,7 +30,7 @@ const projects = [
         subheading: "OmniFood Landing Page",
         description: `This project gave me a solid understanding of <strong>semantic HTML</strong> and the power of <strong>CSS</strong>, particularly with <strong>flexbox</strong> and <strong>grid</strong>. Initially, positioning random elements was challenging, especially when ensuring <strong>full responsiveness</strong> across different screen sizes. However, working through these challenges provided me with a <strong>new perspective on web development</strong> and strengthened my ability to create <strong>well-structured, responsive designs</strong>.`,
 
-        image: "omnifood-mobile.jpg",
+        image: "omnifood-mobile.webp",
       },
       {
         heading: "What I Learned",
@@ -39,7 +39,7 @@ const projects = [
 
         Completing this project made me feel more comfortable using <strong>HTML and CSS</strong>. I also challenged myself further by solving problems from <a class="link__page" href="https://www.frontendmentor.io/profile/tovvydumaplin" target="_blank" rel="noopener noreferrer"><strong>Frontend Mentor</strong></a> to enhance my skills.`,
 
-        image: "profile.png",
+        image: "profile.webp",
         liveLink: "https://omnifood-tovvy.netlify.app/",
         gitHubLink: "https://github.com/tovvydumaplin/Omnifood",
       },
@@ -47,10 +47,10 @@ const projects = [
         heading: "Project Gallery",
         subheading: "Project Gallery",
         imageGallery: [
-          "omni-food-gallery1.png",
-          "omni-food-gallery2.png",
-          "omni-food-gallery3.png",
-          "omni-food-gallery4.png",
+          "omni-food-gallery1.webp",
+          "omni-food-gallery2.webp",
+          "omni-food-gallery3.webp",
+          "omni-food-gallery4.webp",
         ],
       },
     ],
@@ -69,7 +69,7 @@ const projects = [
         The <strong>registration process</strong> was cumbersome, resulting in <strong>emails being unusable</strong> after a failed registration.  
         Additionally, the <strong>booking pages</strong> were confusing for users, making <strong>navigation difficult</strong>.`,
 
-        image: "fastcatbook.jpg",
+        image: "fastcatbook.webp",
       },
       {
         heading: "Technologies",
@@ -90,7 +90,7 @@ const projects = [
 
         The <strong>registration process</strong> has also greatly improved, reducing <strong>user errors</strong> and receiving <strong>great feedback</strong> from stakeholders.`,
 
-        image: "fastcatbook-mobile.png",
+        image: "fastcatbook-mobile.webp",
       },
       {
         heading: "What I Learned",
@@ -99,7 +99,7 @@ const projects = [
 
         Overall, I am <strong>proud</strong> of the contributions I made to the <strong>booking system</strong>, resulting in a <strong>more efficient</strong> and <strong>user-friendly</strong> platform.`,
 
-        image: "profile.png",
+        image: "profile.webp",
         liveLink: "https://fastcat-book.com/",
         gitHubLink: "#",
       },
@@ -107,10 +107,10 @@ const projects = [
         heading: "Project Gallery",
         subheading: "Project Gallery",
         imageGallery: [
-          "fastcatbook-gallery1.png",
-          "fastcatbook-gallery2.png",
-          "fastcatbook-gallery3.png",
-          "fastcatbook-gallery4.png",
+          "fastcatbook-gallery1.webp",
+          "fastcatbook-gallery2.webp",
+          "fastcatbook-gallery3.webp",
+          "fastcatbook-gallery4.webp",
         ],
       },
     ],
@@ -128,7 +128,7 @@ const projects = [
         
         Additionally, the entire system operates on a <strong>single-page application (SPA) approach</strong>, eliminating unnecessary page reloads. <strong>Redundant code was removed</strong>, and <strong>backend functions were refactored</strong> to enhance <strong>performance, maintainability, and overall efficiency</strong>.`,
 
-        image: "onepager.png",
+        image: "onepager.webp",
       },
       {
         heading: "Technologies",
@@ -148,7 +148,7 @@ const projects = [
         Additionally, <strong>seat number duplication</strong> is no longer an issue, and all transactions now <strong>accurately compute the correct amount</strong>, including any <strong>applicable discounts</strong>.  
         
         Overall, the <strong>ticketing system</strong> has improved dramatically while <strong>maintaining its scalability</strong>.`,
-        image: "ticketing-laptop.jpg",
+        image: "ticketing-laptop.webp",
       },
 
       {
@@ -158,7 +158,7 @@ const projects = [
 
         The <strong>new knowledge</strong> gained from this project has significantly impacted my approach to <strong>problem-solving</strong>, allowing me to find solutions more quickly. <strong>Truly glad</strong> to have completed this project.`,
 
-        image: "profile.png",
+        image: "profile.webp",
         liveLink: "https://fastcat-book.com/",
         gitHubLink: "#",
       },
@@ -166,9 +166,9 @@ const projects = [
         heading: "Project Gallery",
         subheading: "Project Gallery",
         imageGallery: [
-          "onepager-gallery1.png",
-          "onepager-gallery2.png",
-          "onepager-gallery3.png",
+          "onepager-gallery1.webp",
+          "onepager-gallery2.webp",
+          "onepager-gallery3.webp",
         ],
       },
     ],
@@ -230,7 +230,7 @@ const projects = [
         
         The system includes an <strong>approval module</strong> that ensures only approved forms are included in calculations. Additionally, the <strong>Captain Dashboard</strong> allows captains to assess trip efficiency, displaying metrics such as average trip time and fuel consumption. The <strong>Fuel Department Dashboard</strong> provides a comprehensive overview, including average fuel consumption per vessel, submission frequency, and captain performance.`,
 
-        image: "rob.jpg",
+        image: "rob.webp",
       },
       {
         heading: "Technologies",
@@ -248,7 +248,7 @@ const projects = [
         description: `As the system is deployed, manual or <strong>handwritten reports</strong> are phased out, resulting in a <strong>paper-free process</strong> for all vessels <strong>nationwide</strong>. It also <strong>reduces fraud</strong> and prevents <strong>unwanted behaviors</strong> committed by others. 
 
         The system makes it easier for the <strong>head office</strong> to track each vessel's <strong>remaining consumables</strong> while also identifying <strong>underperforming vessels</strong> and maintaining <strong>fraud prevention measures</strong>.`,
-        image: "rob-laptop.jpg",
+        image: "rob-laptop.webp",
       },
       {
         heading: "What I Learned",
@@ -260,7 +260,7 @@ const projects = [
         This project not only strengthened my <strong>technical skills</strong> but also improved my ability to think critically and adapt to new technologies. Completing it was a huge milestone, and I am incredibly grateful for the <strong>learning experience</strong> it provided.
         `,
 
-        image: "profile.png",
+        image: "profile.webp",
         liveLink: "#",
         gitHubLink: "#",
       },
@@ -268,10 +268,10 @@ const projects = [
         heading: "Project Gallery",
         subheading: "Project Gallery",
         imageGallery: [
-          "rob-gallery1.png",
-          "rob-gallery2.png",
-          "rob-gallery3.png",
-          "rob-gallery4.png",
+          "rob-gallery1.webp",
+          "rob-gallery2.webp",
+          "rob-gallery3.webp",
+          "rob-gallery4.webp",
         ],
       },
     ],
@@ -426,14 +426,68 @@ document.addEventListener("keydown", function (event) {
 const aboutTovvy = {
   name: "Tovvy Dumaplin",
   occupation: "Junior Developer",
-  address: "City of San Pedro, Laguna",
+  address: {
+    city: "City of San Pedro",
+    province: "Laguna",
+    country: "Philippines",
+  },
   description: `Hi, I’m <strong>Tovvy Dumaplin</strong>, a <strong>dedicated Web Developer</strong> from <strong>San Pedro, Laguna</strong>, with a deep passion for crafting responsive, user-friendly websites and delivering tailored solutions for businesses. I earned my <strong>Bachelor’s Degree in Information Technology</strong> from the <strong>University of Perpetual Help System - Jonelta </strong> in City of Biñan, Laguna.
     
     As a <strong>Full-Time Junior Developer</strong>, I have hands-on experience in <strong>system modifications, system development, enhancements, and database restructuring/partitioning</strong>. I take pride in building scalable systems and optimizing data architectures to improve performance and functionality.`,
+  socialLinks: [
+    {
+      title: "tovvy.dumaplin",
+      link: "https://www.facebook.com/tovvy.dumaplin/",
+      icon: "facebook",
+    },
+    {
+      title: "tovvy_",
+      link: "https://www.instagram.com/tovvy_/",
+      icon: "instagram",
+    },
+    {
+      title: "tovvy-dumaplin",
+      link: "https://www.linkedin.com/in/tovvy-dumaplin/",
+      icon: "linkedin",
+    },
+    {
+      title: "tovvydumaplin",
+      link: "https://github.com/tovvydumaplin",
+      icon: "github",
+    },
+  ],
 };
-console.log(aboutTovvy.description);
-const textDescMe = document.querySelector(".my__desc");
-textDescMe.innerHTML = aboutTovvy.description?.replace(/\n/g, "<br>");
+const showDetailsTovvy = function () {
+  const textDescMe = document.querySelector(".my__desc");
+  textDescMe.innerHTML = aboutTovvy.description?.replace(/\n/g, "<br>");
+};
+
+const showLinksTovvy = function () {
+  const socialContainer = document.querySelector(".hero__social__box");
+  const fragment = document.createDocumentFragment(); // Create a document fragment
+
+  aboutTovvy.socialLinks.forEach((social) => {
+    const linkElement = document.createElement("a");
+    linkElement.classList.add("social__link");
+    linkElement.href = social.link;
+    linkElement.target = "_blank";
+    linkElement.setAttribute(
+      "aria-label",
+      `Follow ${social.title} on ${social.icon}`
+    );
+
+    linkElement.innerHTML = `<ion-icon class="social__icon" name="logo-${social.icon}"></ion-icon>
+      <span class="social__text">${social.username}</span>`;
+
+    fragment.appendChild(linkElement); // Append each link to the fragment
+  });
+
+  socialContainer.appendChild(fragment); // Append the entire fragment to the container at once
+};
+
+showDetailsTovvy();
+showLinksTovvy();
+
 // about
 document.addEventListener("DOMContentLoaded", function () {
   const courses = [
@@ -441,7 +495,8 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Build Responsive Real-World Websites with HTML and CSS",
       instructor: "Jonas Schmedtmann",
       progress: 100,
-      certificateLink: "#",
+      certificateLink:
+        "https://www.udemy.com/certificate/UC-6ab9aebe-b3c6-4bac-bfa3-30cef9cb63e8/",
     },
     {
       title: "The Complete JavaScript Course 2025: From Zero to Expert!",
@@ -481,14 +536,21 @@ document.addEventListener("DOMContentLoaded", function () {
       card.classList.add("card__learning");
 
       card.innerHTML = `
-        <p class="learning__heading">${course.title}</p>
+        <div class="learning__heading__box grid justify__end__grid">
+          <p class="learning__heading">${course.title}</p>
+          <img class="img__udemy" src="resources/udemy.png" alt="Logo of Udemy"/>
+        </div>
         <p class="learning__subheading">${course.instructor}</p>
         <div class="progress__bar">
           <div class="progress__fill" style="width: ${course.progress}%"></div>
         </div>
         <div class="learning__progess__button">
           <p class="learning__progess__text">${course.progress}% Complete</p>
-          <a href="${course.certificateLink}" class="link">View Certificate</a>
+          ${
+            course.certificateLink && course.certificateLink !== "#"
+              ? `<a href="${course.certificateLink}" class="certificate__link">View Certificate</a>`
+              : ""
+          }
         </div>
       `;
 
@@ -507,17 +569,33 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".overlay").classList.remove("open");
     document.querySelector(".modal").classList.remove("open");
   };
+
+  const removeNoScroll = function () {
+    document.querySelector("html").classList.remove("no__scroll");
+  };
+  const addNoScroll = function () {
+    document.querySelector("html").classList.add("no__scroll");
+  };
   document
     .querySelector(".learning__btn")
     .addEventListener("click", function () {
       openLearningModal();
+      addNoScroll();
     });
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       closeLearningModal();
+      removeNoScroll();
     }
   });
   document.querySelector(".overlay").addEventListener("click", function () {
     closeLearningModal();
+    removeNoScroll();
   });
+  document
+    .querySelector(".learning__icon__close ")
+    .addEventListener("click", function () {
+      closeLearningModal();
+      removeNoScroll();
+    });
 });

@@ -77,6 +77,7 @@ window.addEventListener("load", initializeAnimation);
 document.addEventListener("DOMContentLoaded", initializeEventListeners);
 
 function initializeAnimation() {
+  document.querySelector("html").classList.add("no__scroll");
   // delaying animation for 2.5s
   setTimeout(() => {
     console.log("Animating");
@@ -126,6 +127,7 @@ function startSlideAnimation() {
     // watch the end of animation to add hide loading screen
     leftBlind.addEventListener("animationend", hideLoadingScreen);
     rightBlind.addEventListener("animationend", hideLoadingScreen);
+    document.querySelector("html").classList.remove("no__scroll");
   }, 1000); // delay to start the slide here
 }
 

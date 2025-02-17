@@ -22,6 +22,12 @@
   font-size: 7rem;
   text-transform: uppercase;
 }
+.heading__tertiary {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  color: var(--black-color);
+}
 .btn__primary:link,
 .btn__primary:visited {
   color: var(--white-color);
@@ -185,6 +191,9 @@
 }
 .justify__cntr__grid {
   justify-items: center;
+}
+.justify__end__grid {
+  justify-items: end;
 }
 .gap__1 {
   gap: 1rem;
@@ -371,6 +380,15 @@
   color: var(--orange-color);
 }
 .social__link:hover .social__text {
+  visibility: visible;
+  display: inline-block;
+  opacity: 1;
+}
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:focus .social__text {
   visibility: visible;
   display: inline-block;
   opacity: 1;

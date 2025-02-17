@@ -259,12 +259,13 @@
             src="resources/dots_element.png"
             data-aos="fade-right"
             data-aos-duration="1000"
+            alt="Dots image"
           />
           <div class="img__box__profile">
             <img
               class="profile__img index__1"
               alt="Image of Tovvy Dumaplin"
-              src="resources/profile.png"
+              src="resources/profile.webp"
               data-aos="fade-right"
               data-aos-duration="1000"
             />
@@ -295,7 +296,13 @@
         </div>
         <div class="overlay"></div>
         <div class="modal learning__progress">
-          <h3 class="heading__tertiary">MY LEARNING JOURNEY</h3>
+          <div class="learning__heading__title">
+            <h3 class="heading__tertiary">What I'm Learning Right Now</h3>
+            <ion-icon
+              class="learning__icon__close"
+              name="close-outline"
+            ></ion-icon>
+          </div>
         </div>
       </section>
       <section class="section__tagline">
@@ -435,7 +442,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/html.png"
+                src="resources/html.webp"
                 alt="HTML Logo"
               />
               <p class="skill__subheading">HTML</p>
@@ -448,7 +455,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/js.png"
+                src="resources/js.webp"
                 alt="JavaScript Logo"
               />
               <p class="skill__subheading">JavaScript</p>
@@ -461,7 +468,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/php.png"
+                src="resources/php.webp"
                 alt="PHP Logo"
               />
               <p class="skill__subheading">PHP</p>
@@ -474,7 +481,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/git.png"
+                src="resources/git.webp"
                 alt="Figma Logo"
               />
               <p class="skill__subheading">Git</p>
@@ -487,7 +494,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/laravel.png"
+                src="resources/laravel.webp"
                 alt="HTML Logo"
               />
               <p class="skill__subheading">Laravel</p>
@@ -502,7 +509,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/css.png"
+                src="resources/css.webp"
                 alt="CSS Logo"
               />
               <p class="skill__subheading">CSS</p>
@@ -515,7 +522,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/jquery.png"
+                src="resources/jquery.webp"
                 alt="jQuery Logo"
               />
               <p class="skill__subheading">jQuery</p>
@@ -528,7 +535,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/ci4.png"
+                src="resources/ci4.webp"
                 alt="CodeIgniter 4 Logo"
               />
               <p class="skill__subheading">Code Igniter</p>
@@ -541,7 +548,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/bootstrap.png"
+                src="resources/bootstrap.webp"
                 alt="Bootstrap Logo"
               />
               <p class="skill__subheading">BootStrap</p>
@@ -554,7 +561,7 @@
             >
               <img
                 class="skill__image"
-                src="resources/figma.png"
+                src="resources/figma.webp"
                 alt="HTML Logo"
               />
               <p class="skill__subheading">Figma</p>
@@ -582,25 +589,45 @@
                   <p class="project__desc"></p>
                 </div>
               </div>
-              <img class="project__img__modal" src="" alt="" />
+              <img
+                class="project__img__modal"
+                src=""
+                alt="image of a project"
+              />
             </div>
             <!-- 2 -->
             <div class="project__container__details">
               <div class="technologies__box">
                 <div class="tech__item__box">
-                  <img class="tech__item" src="resources/ci4.png" />
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
                   <p class="tech__title"></p>
                 </div>
                 <div class="tech__item__box">
-                  <img class="tech__item" src="resources/ci4.png" />
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
                   <p class="tech__title"></p>
                 </div>
                 <div class="tech__item__box">
-                  <img class="tech__item" src="resources/ci4.png" />
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
                   <p class="tech__title"></p>
                 </div>
                 <div class="tech__item__box">
-                  <img class="tech__item" src="resources/ci4.png" />
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
                   <p class="tech__title"></p>
                 </div>
               </div>
@@ -627,16 +654,16 @@
               </div>
               <img
                 class="project__img__modal"
-                src="resources/fastcatbook_project.png"
-                alt=""
+                src="resources/fastcatbook_project.webp"
+                alt="Image of the project"
               />
             </div>
             <!-- 4 -->
             <div class="project__container__details">
               <img
                 class="project__img__modal"
-                src="resources/fastcatbook_project.png"
-                alt=""
+                src="resources/fastcatbook_project.webp"
+                alt="Image of the project"
               />
               <div class="project__text__container">
                 <div class="project__heading__box">
@@ -681,10 +708,26 @@
                   <p class="subheading">Web Screen Shots</p>
                 </div>
                 <div class="project__gallery">
-                  <img class="project__gallery__img" src="" />
-                  <img class="project__gallery__img" src="" />
-                  <img class="project__gallery__img" src="" />
-                  <img class="project__gallery__img" src="" />
+                  <img
+                    class="project__gallery__img"
+                    src=""
+                    alt="Image of the project"
+                  />
+                  <img
+                    class="project__gallery__img"
+                    src=""
+                    alt="Image of the project"
+                  />
+                  <img
+                    class="project__gallery__img"
+                    src=""
+                    alt="Image of the project"
+                  />
+                  <img
+                    class="project__gallery__img"
+                    src=""
+                    alt="Image of the project"
+                  />
                 </div>
               </div>
             </div>
@@ -726,7 +769,7 @@
                 <div class="img__box">
                   <img
                     class="project__img"
-                    src="resources/omnifood.jpg"
+                    src="resources/omnifood.webp"
                     alt="OmniFood Landing Page"
                     data-aos="fade-up-right"
                     data-aos-duration="1000"
@@ -777,7 +820,7 @@
                 <div class="img__box">
                   <img
                     class="project__img"
-                    src="resources/fastcatbook.jpg"
+                    src="resources/fastcatbook.webp"
                     alt="Fastcat Booking Website"
                     data-aos="fade-up-left"
                     data-aos-duration="1000"
@@ -828,7 +871,7 @@
                 <div class="img__box">
                   <img
                     class="project__img easybank"
-                    src="resources/onepager.png"
+                    src="resources/onepager.webp"
                     alt="FastCat Ticketing System"
                     data-aos="fade-right"
                     data-aos-offset="300"
@@ -880,7 +923,7 @@
                 <div class="img__box">
                   <img
                     class="project__img"
-                    src="resources/rob.jpg"
+                    src="resources/rob.webp"
                     alt="Remaining On Board Monitoring System"
                     data-aos="fade-left"
                     data-aos-offset="500"
