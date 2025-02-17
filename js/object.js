@@ -1,6 +1,4 @@
-const project = document.querySelectorAll(".project");
-console.log(project);
-
+// Objects
 const projects = [
   {
     title: "OmniFood Landing Page",
@@ -277,9 +275,100 @@ const projects = [
     ],
   },
 ];
-// PROJECT SHOWING THE TECHNOLOGIES PART
-// Find the project that has the "Technologies" section
 
+const aboutTovvy = {
+  name: "Tovvy Dumaplin",
+  occupation: "Junior Developer",
+  address: {
+    city: "City of San Pedro",
+    province: "Laguna",
+    country: "Philippines",
+  },
+  description: `Hi, I’m <strong>Tovvy Dumaplin</strong>, a <strong>dedicated Web Developer</strong> from <strong>San Pedro, Laguna</strong>, with a deep passion for crafting responsive, user-friendly websites and delivering tailored solutions for businesses. I earned my <strong>Bachelor’s Degree in Information Technology</strong> from the <strong>University of Perpetual Help System - Jonelta </strong> in City of Biñan, Laguna.
+    
+    As a <strong>Full-Time Junior Developer</strong>, I have hands-on experience in <strong>system modifications, system development, enhancements, and database restructuring/partitioning</strong>. I take pride in building scalable systems and optimizing data architectures to improve performance and functionality.`,
+  socialLinks: [
+    {
+      title: "tovvy.dumaplin",
+      link: "https://www.facebook.com/tovvy.dumaplin/",
+      icon: "facebook",
+    },
+    {
+      title: "tovvy_",
+      link: "https://www.instagram.com/tovvy_/",
+      icon: "instagram",
+    },
+    {
+      title: "tovvy-dumaplin",
+      link: "https://www.linkedin.com/in/tovvy-dumaplin/",
+      icon: "linkedin",
+    },
+    {
+      title: "tovvydumaplin",
+      link: "https://github.com/tovvydumaplin",
+      icon: "github",
+    },
+  ],
+};
+// about
+const tagLine = [
+  {
+    title: "Learner.",
+    description:
+      "I am a learner. Like most developers, I always try to stay on track when it comes to web development.",
+  },
+  {
+    title: "enjoyer.",
+    description:
+      "I enjoy taking on new things, even when faced with a difficult task or challenge",
+  },
+  {
+    title: "explorer.",
+    description:
+      "I am curious, so I constantly explore new things and try to create something with them.",
+  },
+  {
+    title: "creator.",
+    description:
+      "I create things that live on the web, and it's something I've always enjoyed.",
+  },
+];
+const courses = [
+  {
+    title: "Build Responsive Real-World Websites with HTML and CSS",
+    instructor: "Jonas Schmedtmann",
+    progress: 100,
+    certificateLink:
+      "https://www.udemy.com/certificate/UC-6ab9aebe-b3c6-4bac-bfa3-30cef9cb63e8/",
+  },
+  {
+    title: "The Complete JavaScript Course 2025: From Zero to Expert!",
+    instructor: "Jonas Schmedtmann",
+    progress: 30,
+    certificateLink: "#",
+  },
+  {
+    title: "Web Design for Web Developers: Build Beautiful Websites!",
+    instructor: "Jonas Schmedtmann",
+    progress: 100,
+    certificateLink: "#",
+  },
+  {
+    title: "The Ultimate React Course 2024: React, Next.js, Redux & More",
+    instructor: "Jonas Schmedtmann",
+    progress: 1,
+    certificateLink: "#",
+  },
+  {
+    title: "The Complete Full-Stack Web Development Bootcamp",
+    instructor: "Dr. Angela Yu",
+    progress: 20,
+    certificateLink: "#",
+  },
+];
+//---------------- FUNCTIONS HERE ----------------//
+
+// const project = document.querySelectorAll(".project");
 const loadProjects = function (index) {
   const containerDetails = document.querySelectorAll(
     ".project__container__details"
@@ -332,136 +421,70 @@ const loadProjects = function (index) {
     }
   });
 };
-
+// Function to open project
 const openProjectModal = function () {
   document.querySelector(".cover").classList.add("open");
   document.querySelector("html").classList.add("no__scroll");
 };
+// Function to close project
 const closeProjectModal = function () {
   document.querySelector(".cover").classList.remove("open");
   document.querySelector("html").classList.remove("no__scroll");
 };
+// Function to show the project (Project)
+const clickedProject = function (index) {
+  console.log("Project Index Clicked:", index);
 
-document.querySelectorAll(".project").forEach((item, index) => {
-  item.addEventListener("click", () => {
-    console.log("Project Index Clicked:", index); // Debugging log
-    document.querySelector(".project__view").scrollTop = 0;
-    loadProjects(index);
-    openProjectModal();
-    hideHoverText();
+  // Cache elements before modifying them
+  const projectView = document.querySelector(".project__view");
+  const techItems = Array.from(document.querySelectorAll(".tech__item"));
+  const techTitles = Array.from(document.querySelectorAll(".tech__title"));
+  const galleryImages = Array.from(
+    document.querySelectorAll(".project__gallery__img")
+  );
 
-    // Changing the Technologies used section on modal
-    // Get the selected project based on index
-    const selectedProject = projects[index];
-
-    // Find the "Technologies" section within the selected project
-    const techSection = selectedProject.sections.find(
-      (section) => section.heading === "Technologies"
-    );
-    // Get the images and titles from the "Technologies" section
-    const techData = techSection ? techSection : { image: [], techTitle: [] };
-    // Select all existing <img> elements with class "tech__item"
-    document.querySelectorAll(".tech__item").forEach((img, idx) => {
-      if (techData.image[idx]) {
-        img.src = `resources/${techData.image[idx]}`;
-      } else {
-        img.src = ""; // Clear image if no data
-      }
-    });
-    // Select all existing <p> elements with class "tech__title"
-    document.querySelectorAll(".tech__title").forEach((p, idx) => {
-      if (techData.techTitle[idx]) {
-        p.textContent = techData.techTitle[idx];
-      } else {
-        p.textContent = ""; // Clear text if no data
-      }
-    });
-
-    // Find the "Project Gallery" section within the selected project
-    const gallerySection = selectedProject.sections.find(
-      (section) => section.heading === "Project Gallery"
-    );
-
-    // Get the images from the "Project Gallery" section
-    const galleryData = gallerySection ? gallerySection.imageGallery : [];
-
-    // Select all existing <img> elements with class "project__gallery__img"
-    document.querySelectorAll(".project__gallery__img").forEach((img, idx) => {
-      if (galleryData[idx]) {
-        img.src = `resources/gallery/${galleryData[idx]}`;
-      } else {
-        img.src = ""; // Clear image if no data
-      }
-    });
-  });
-});
-
-document
-  .querySelector(".project__icon__close")
-  .addEventListener("click", function () {
-    closeProjectModal();
+  // Avoid forced reflow by using requestAnimationFrame
+  requestAnimationFrame(() => {
+    projectView.scrollTop = 0;
   });
 
-document.addEventListener("keydown", function (event) {
-  console.log(event.key);
-  if (event.key === "Escape") {
-    closeProjectModal();
-  }
-});
-// const containerDetails = document.querySelectorAll(
-//   ".project__container__details"
-// );
-// const project = projects[index]; // Get the selected project
+  loadProjects(index);
+  openProjectModal();
+  hideHoverText();
 
-// project.sections.forEach((section, i) => {
-//   if (containerDetails[i]) {
-//     // Update heading, subheading, and description
-//     containerDetails[i].querySelector(".heading__secondary").textContent =
-//       section.heading;
-//     containerDetails[i].querySelector(".subheading").textContent =
-//       section.subheading;
-//     containerDetails[i].querySelector(".project__desc").innerHTML =
-//       section.description?.replace(/\n/g, "<br>");
+  const selectedProject = projects[index];
 
-const aboutTovvy = {
-  name: "Tovvy Dumaplin",
-  occupation: "Junior Developer",
-  address: {
-    city: "City of San Pedro",
-    province: "Laguna",
-    country: "Philippines",
-  },
-  description: `Hi, I’m <strong>Tovvy Dumaplin</strong>, a <strong>dedicated Web Developer</strong> from <strong>San Pedro, Laguna</strong>, with a deep passion for crafting responsive, user-friendly websites and delivering tailored solutions for businesses. I earned my <strong>Bachelor’s Degree in Information Technology</strong> from the <strong>University of Perpetual Help System - Jonelta </strong> in City of Biñan, Laguna.
-    
-    As a <strong>Full-Time Junior Developer</strong>, I have hands-on experience in <strong>system modifications, system development, enhancements, and database restructuring/partitioning</strong>. I take pride in building scalable systems and optimizing data architectures to improve performance and functionality.`,
-  socialLinks: [
-    {
-      title: "tovvy.dumaplin",
-      link: "https://www.facebook.com/tovvy.dumaplin/",
-      icon: "facebook",
-    },
-    {
-      title: "tovvy_",
-      link: "https://www.instagram.com/tovvy_/",
-      icon: "instagram",
-    },
-    {
-      title: "tovvy-dumaplin",
-      link: "https://www.linkedin.com/in/tovvy-dumaplin/",
-      icon: "linkedin",
-    },
-    {
-      title: "tovvydumaplin",
-      link: "https://github.com/tovvydumaplin",
-      icon: "github",
-    },
-  ],
+  const techSection = selectedProject.sections.find(
+    (section) => section.heading === "Technologies"
+  );
+
+  const techData = techSection || { image: [], techTitle: [] };
+
+  techItems.forEach((img, idx) => {
+    img.src = techData.image[idx] ? `resources/${techData.image[idx]}` : "";
+  });
+
+  techTitles.forEach((p, idx) => {
+    p.textContent = techData.techTitle[idx] || "";
+  });
+
+  // Get the "Project Gallery" section
+  const gallerySection = selectedProject.sections.find(
+    (section) => section.heading === "Project Gallery"
+  );
+
+  const galleryData = gallerySection ? gallerySection.imageGallery : [];
+
+  galleryImages.forEach((img, idx) => {
+    img.src = galleryData[idx] ? `resources/gallery/${galleryData[idx]}` : "";
+  });
 };
+// Function to show the my details on load
 const showDetailsTovvy = function () {
   const textDescMe = document.querySelector(".my__desc");
   textDescMe.innerHTML = aboutTovvy.description?.replace(/\n/g, "<br>");
 };
-
+// Function to show the my details on load
 const showLinksTovvy = function () {
   const socialContainer = document.querySelector(".hero__social__box");
   const fragment = document.createDocumentFragment(); // Create a document fragment
@@ -484,34 +507,7 @@ const showLinksTovvy = function () {
 
   socialContainer.appendChild(fragment); // Append the entire fragment to the container at once
 };
-
-showDetailsTovvy();
-showLinksTovvy();
-
-// about
-const tagLine = [
-  {
-    title: "Learner.",
-    description:
-      "I am a learner. Like most developers, I always try to stay on track when it comes to web development.",
-  },
-  {
-    title: "enjoyer.",
-    description:
-      "I enjoy taking on new things, even when faced with a difficult task or challenge",
-  },
-  {
-    title: "explorer.",
-    description:
-      "I am curious, so I constantly explore new things and try to create something with them.",
-  },
-  {
-    title: "creator.",
-    description:
-      "I create things that live on the web, and it's something I've always enjoyed.",
-  },
-];
-
+// Function to show the details of tag line
 const loadTagLine = function () {
   const taglineSection = document.querySelector(".section__tagline");
   const descriptions = taglineSection.querySelectorAll(".text__description");
@@ -524,116 +520,109 @@ const loadTagLine = function () {
     }
   });
 };
+// Function to show the current courses from udemy
+const displayLearning = function () {
+  const modal = document.querySelector(".learning__progress");
 
-loadTagLine();
+  // Create a container for all cards
+  const container = document.createElement("div");
+  container.classList.add("card__container");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const courses = [
-    {
-      title: "Build Responsive Real-World Websites with HTML and CSS",
-      instructor: "Jonas Schmedtmann",
-      progress: 100,
-      certificateLink:
-        "https://www.udemy.com/certificate/UC-6ab9aebe-b3c6-4bac-bfa3-30cef9cb63e8/",
-    },
-    {
-      title: "The Complete JavaScript Course 2025: From Zero to Expert!",
-      instructor: "Jonas Schmedtmann",
-      progress: 30,
-      certificateLink: "#",
-    },
-    {
-      title: "Web Design for Web Developers: Build Beautiful Websites!",
-      instructor: "Jonas Schmedtmann",
-      progress: 100,
-      certificateLink: "#",
-    },
-    {
-      title: "The Ultimate React Course 2024: React, Next.js, Redux & More",
-      instructor: "Jonas Schmedtmann",
-      progress: 1,
-      certificateLink: "#",
-    },
-    {
-      title: "The Complete Full-Stack Web Development Bootcamp",
-      instructor: "Dr. Angela Yu",
-      progress: 20,
-      certificateLink: "#",
-    },
-  ];
+  courses.forEach((course) => {
+    const card = document.createElement("div");
+    card.classList.add("card__learning");
 
-  const displayLearning = function () {
-    const modal = document.querySelector(".learning__progress");
+    card.innerHTML = `
+      <div class="learning__heading__box grid justify__end__grid">
+        <p class="learning__heading">${course.title}</p>
+        <img class="img__udemy" src="resources/udemy.png" alt="Logo of Udemy"/>
+      </div>
+      <p class="learning__subheading">${course.instructor}</p>
+      <div class="progress__bar">
+        <div class="progress__fill" style="width: ${course.progress}%"></div>
+      </div>
+      <div class="learning__progess__button">
+        <p class="learning__progess__text">${course.progress}% Complete</p>
+        ${
+          course.certificateLink && course.certificateLink !== "#"
+            ? `<a href="${course.certificateLink}" class="certificate__link">View Certificate</a>`
+            : ""
+        }
+      </div>
+    `;
 
-    // Create a container for all cards
-    const container = document.createElement("div");
-    container.classList.add("card__container");
-
-    courses.forEach((course) => {
-      const card = document.createElement("div");
-      card.classList.add("card__learning");
-
-      card.innerHTML = `
-        <div class="learning__heading__box grid justify__end__grid">
-          <p class="learning__heading">${course.title}</p>
-          <img class="img__udemy" src="resources/udemy.png" alt="Logo of Udemy"/>
-        </div>
-        <p class="learning__subheading">${course.instructor}</p>
-        <div class="progress__bar">
-          <div class="progress__fill" style="width: ${course.progress}%"></div>
-        </div>
-        <div class="learning__progess__button">
-          <p class="learning__progess__text">${course.progress}% Complete</p>
-          ${
-            course.certificateLink && course.certificateLink !== "#"
-              ? `<a href="${course.certificateLink}" class="certificate__link">View Certificate</a>`
-              : ""
-          }
-        </div>
-      `;
-
-      container.appendChild(card);
-    });
-    // Append the dynamically created container to the modal
-    modal.appendChild(container);
-  };
-  displayLearning();
-
-  const openLearningModal = function () {
-    document.querySelector(".overlay").classList.add("open");
-    document.querySelector(".modal").classList.add("open");
-  };
-  const closeLearningModal = function () {
-    document.querySelector(".overlay").classList.remove("open");
-    document.querySelector(".modal").classList.remove("open");
-  };
-
-  const removeNoScroll = function () {
-    document.querySelector("html").classList.remove("no__scroll");
-  };
-  const addNoScroll = function () {
-    document.querySelector("html").classList.add("no__scroll");
-  };
-  document
-    .querySelector(".learning__btn")
-    .addEventListener("click", function () {
-      openLearningModal();
-      addNoScroll();
-    });
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      closeLearningModal();
-      removeNoScroll();
-    }
+    container.appendChild(card);
   });
-  document.querySelector(".overlay").addEventListener("click", function () {
+  // Append the dynamically created container to the modal
+  modal.appendChild(container);
+};
+// Open Learning Modal
+const openLearningModal = function () {
+  document.querySelector(".overlay").classList.add("open");
+  document.querySelector(".modal").classList.add("open");
+};
+// Close Learning Modal
+const closeLearningModal = function () {
+  document.querySelector(".overlay").classList.remove("open");
+  document.querySelector(".modal").classList.remove("open");
+};
+// Removing no scroll for hmtl
+const removeNoScroll = function () {
+  document.querySelector("html").classList.remove("no__scroll");
+};
+// Adding no scroll for hmtl
+const addNoScroll = function () {
+  document.querySelector("html").classList.add("no__scroll");
+};
+
+//---------------- FUNCTION CALLS ----------------//
+
+window.addEventListener("load", () => {
+  showDetailsTovvy();
+  showLinksTovvy();
+  loadTagLine();
+  displayLearning();
+});
+//---------------- EVENT LISTENERS ----------------//
+
+// Clicked project opens a modal (Project)
+document.querySelectorAll(".project").forEach((item, index) => {
+  item.addEventListener("click", () => clickedProject(index));
+});
+// Close the project modal (Project)
+document
+  .querySelector(".project__icon__close")
+  .addEventListener("click", function () {
+    closeProjectModal();
+  });
+// Close the project modal (Project)
+document.addEventListener("keydown", function (event) {
+  console.log(event.key);
+  if (event.key === "Escape") {
+    closeProjectModal();
+  }
+});
+
+//
+document.querySelector(".learning__btn").addEventListener("click", function () {
+  openLearningModal();
+  addNoScroll();
+});
+
+//
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeLearningModal();
+    removeNoScroll();
+  }
+});
+document.querySelector(".overlay").addEventListener("click", function () {
+  closeLearningModal();
+  removeNoScroll();
+});
+document
+  .querySelector(".learning__icon__close ")
+  .addEventListener("click", function () {
     closeLearningModal();
     removeNoScroll();
   });
-  document
-    .querySelector(".learning__icon__close ")
-    .addEventListener("click", function () {
-      closeLearningModal();
-      removeNoScroll();
-    });
-});
