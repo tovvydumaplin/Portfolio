@@ -22,6 +22,9 @@
   font-size: 7rem;
   text-transform: uppercase;
 }
+.dark .heading__tertiary {
+  color: var(--white-color);
+}
 .heading__tertiary {
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
@@ -410,6 +413,10 @@
 .social:active {
   color: var(--orange-color);
 }
+.dark .social:link,
+.dark .social:visited {
+  color: var(--white-color);
+}
 .menu__link:link,
 .menu__link:visited {
   text-decoration: none;
@@ -419,6 +426,10 @@
 .menu__link:hover,
 .menu__link:active {
   color: var(--orange-color);
+}
+
+.dark .menu__link:link {
+  color: var(--white-color);
 }
 
 /* .stroke__element__small {

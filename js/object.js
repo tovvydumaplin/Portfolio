@@ -20,7 +20,7 @@ const projects = [
 
         This project serves as a <strong>hands-on practice</strong> to refine my <strong>front-end development skills</strong> and improve my ability to create <strong>visually appealing, well-structured web pages</strong>.`,
 
-        image: ["html.png", "css.png", "js.png", "git.png"],
+        image: ["html.webp", "css.webp", "js.webp", "git.webp"],
         techTitle: ["HTML", "CSS", "JavaScript", "Git"],
       },
       {
@@ -78,7 +78,7 @@ const projects = [
         
         <strong>Ionicons</strong> was also used for a quick and easy integration of <strong>SVG-based icons</strong>, allowing for easy customization.`,
 
-        image: ["ci4.png", "jquery.png", "css.png", "js.png"],
+        image: ["ci4.webp", "jquery.webp", "css.webp", "js.webp"],
         techTitle: ["Code Igniter", "jQuery", "CSS", "JavaScript"],
       },
       {
@@ -135,7 +135,7 @@ const projects = [
 
         The selected technologies align with the <strong>company’s existing tech stack</strong>, ensuring <strong>better compatibility</strong> with the team. This approach allows for <strong>faster development</strong> and makes <strong>future customizations</strong> easier and more efficient.`,
 
-        image: ["html.png", "bootstrap.png", "jquery.png", "ci4.png"],
+        image: ["html.webp", "bootstrap.webp", "jquery.webp", "ci4.webp"],
         techTitle: ["HTML", "Bootstrap", "jQuery", "Code Igniter"],
       },
       {
@@ -237,7 +237,7 @@ const projects = [
 
         The chosen technologies align with the company's existing <strong>tech stack</strong>, ensuring that the system remains <strong>lightweight</strong>, <strong>fast</strong>, and <strong>easily customizable</strong> for future needs.`,
 
-        image: ["php.png", "jquery.png", "css.png", "html.png"],
+        image: ["php.webp", "jquery.webp", "css.webp", "html.webp"],
         techTitle: ["PHP Core", "jQuery", "CSS", "HTML"],
       },
       {
