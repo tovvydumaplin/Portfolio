@@ -624,16 +624,13 @@ body.dark {
   gap: 6rem;
 }
 .dark .skill {
-<<<<<<< HEAD
   background-color: #595959;
 }
 .dark .skill .skill__subheading {
-=======
   background-color: #3a3a3a;
 }
 
 .dark .skill__subheading {
->>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
   color: var(--white-color);
 }
 .skill {
@@ -812,14 +809,11 @@ body.dark {
 }
 .dark .project__view {
   background-color: var(--darkMode-color);
-<<<<<<< HEAD
 }
 .dark .project__heading__box .heading__secondary {
-=======
   color: var(--white-color);
 }
 .dark .project__container__details .heading__secondary {
->>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
   color: var(--white-color);
 }
 .project__icon__close {
@@ -898,14 +892,11 @@ body.dark {
   /* align-self: center; */
 }
 .dark .tech__item__box {
-<<<<<<< HEAD
   background-color: #595959;
 }
 .dark .tech__title {
   color: var(--white-color);
-=======
   background-color: #3a3a3a;
->>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
 }
 .tech__item__box {
   display: flex;
