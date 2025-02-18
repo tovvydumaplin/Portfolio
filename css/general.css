@@ -373,6 +373,9 @@ body.dark {
   gap: 5rem;
   width: 100%;
 }
+.dark .card__learning {
+  background-color: #3a3a3a;
+}
 .card__learning {
   padding: 3rem 2rem;
   border-radius: 1rem;
@@ -424,6 +427,9 @@ body.dark {
   visibility: hidden;
   transition: all 0.3s ease;
 }
+.dark .learning__heading {
+  color: var(--white-color);
+}
 .learning__heading {
   max-width: 40.7rem;
   font-family: "Poppins", sans-serif;
@@ -432,6 +438,7 @@ body.dark {
   font-size: 2.1rem;
   line-height: 1.3;
 }
+
 .learning__subheading {
   font-family: "Lexend", sans-serif;
   margin-bottom: 1rem;
@@ -440,6 +447,12 @@ body.dark {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+}
+.dark .learning__subheading {
+  color: var(--white-color);
+}
+.dark .learning__progess__text {
+  color: var(--white-color);
 }
 .progress__bar {
   height: 0.5rem;
@@ -611,9 +624,16 @@ body.dark {
   gap: 6rem;
 }
 .dark .skill {
+<<<<<<< HEAD
   background-color: #595959;
 }
 .dark .skill .skill__subheading {
+=======
+  background-color: #3a3a3a;
+}
+
+.dark .skill__subheading {
+>>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
   color: var(--white-color);
 }
 .skill {
@@ -792,8 +812,14 @@ body.dark {
 }
 .dark .project__view {
   background-color: var(--darkMode-color);
+<<<<<<< HEAD
 }
 .dark .project__heading__box .heading__secondary {
+=======
+  color: var(--white-color);
+}
+.dark .project__container__details .heading__secondary {
+>>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
   color: var(--white-color);
 }
 .project__icon__close {
@@ -872,10 +898,14 @@ body.dark {
   /* align-self: center; */
 }
 .dark .tech__item__box {
+<<<<<<< HEAD
   background-color: #595959;
 }
 .dark .tech__title {
   color: var(--white-color);
+=======
+  background-color: #3a3a3a;
+>>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
 }
 .tech__item__box {
   display: flex;
