@@ -1,3 +1,108 @@
+/* Laptop 1536px */
+@media (max-width: 96em) {
+  html {
+    font-size: 55%;
+  }
+  /* Project View */
+  .project__btn__primary:link,
+  .project__btn__primary:visited {
+    gap: 1rem;
+    font-size: 1.6rem;
+  }
+  /* Project View Ends */
+  /* HERO */
+  .section__hero {
+    padding: 15.5rem 0 0 0;
+    margin-top: 17rem;
+  }
+  .container {
+    padding: 0 3rem;
+  }
+  .circle-text {
+    width: 170px;
+    height: 170px;
+  }
+  .hero__subheading {
+    font-size: 3rem;
+  }
+  .heading__primary {
+    font-size: 11rem;
+  }
+  .section__hero::before {
+    bottom: -81rem;
+  }
+  .stroke__element {
+    top: 7rem;
+  }
+  .header__hamburger.close .top {
+    transform: rotate(-40deg) translate(-7px, 5px);
+    animation: none;
+  }
+  .header__hamburger.close .bottom {
+    transform: rotate(40deg) translate(-12px, -11px);
+    animation: none;
+  }
+  .hero__social__box,
+  .hero__scroll__box {
+    top: -31.5rem;
+  }
+  .img__arrow {
+    top: -12rem;
+    left: 22rem;
+  }
+  /* REUSE */
+  .container {
+    max-width: 130rem;
+  }
+  /* ABOUT */
+  .stroke__element__small {
+    right: -39rem;
+  }
+  /* SKILLS */
+  .skill__stroke {
+    left: -37rem;
+  }
+  .skill {
+    padding: 4rem 2rem;
+  }
+  /* TAG LINE */
+  .tagline__text {
+    font-family: "raleway", sans-serif;
+    font-size: 13rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--black-color);
+    transition: all 0.5s ease;
+  }
+  .learner.arrow {
+    right: -14rem;
+    bottom: 1.5rem;
+  }
+  .enjoyer.arrow {
+    top: 1rem;
+    left: -15.2rem;
+  }
+  .explorer.arrow {
+    top: 3.5rem;
+    right: -14rem;
+  }
+  .creator.arrow {
+    top: 0.6rem;
+  }
+  .arrow {
+    width: 16rem;
+  }
+  .tag__box {
+    gap: 5rem;
+  }
+  /* PROJECT */
+  .project__stroke {
+    left: -28rem;
+  }
+  .project__stroke__second {
+    right: -25rem;
+  }
+}
 /* Laptop 1366px */
 @media (max-width: 85.375em) {
   html {
