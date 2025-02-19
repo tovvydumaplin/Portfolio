@@ -413,14 +413,11 @@
 .social:active {
   color: var(--orange-color);
 }
-<<<<<<< HEAD
 
-=======
 .dark .social:link,
 .dark .social:visited {
   color: var(--white-color);
 }
->>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
 .menu__link:link,
 .menu__link:visited {
   text-decoration: none;
@@ -432,11 +429,8 @@
   color: var(--orange-color);
 }
 
-<<<<<<< HEAD
-.dark .menu__link {
-=======
-.dark .menu__link:link {
->>>>>>> 5d8811290c36178086a9ba5d6720e2ccbe0b78c2
+.dark .menu__link:link,
+.dark .menu__link:visited {
   color: var(--white-color);
 }
 

@@ -626,9 +626,6 @@ body.dark {
 .dark .skill {
   background-color: #595959;
 }
-.dark .skill .skill__subheading {
-  background-color: #3a3a3a;
-}
 
 .dark .skill__subheading {
   color: var(--white-color);
@@ -896,7 +893,6 @@ body.dark {
 }
 .dark .tech__title {
   color: var(--white-color);
-  background-color: #3a3a3a;
 }
 .tech__item__box {
   display: flex;
