@@ -1305,14 +1305,6 @@ ion-icon {
   transition: all 1s ease;
   opacity: 0;
 }
-/* .stroke__element,
-.stroke__element__small,
-.skill__stroke,
-.project__stroke,
-.project__stroke__second,
-.section__hero::before {
-  display: none;
-} */
 
 /* Scroll Bar */
 /* Width and height of scrollbar */

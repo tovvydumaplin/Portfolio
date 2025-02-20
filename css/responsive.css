@@ -310,16 +310,6 @@
   .explorer.arrow {
     right: -11rem;
   }
-  /* .learner.arrow {
-    right: -2rem;
-  }
-  .explorer.arrow {
-    right: -7rem;
-    top: 0.5rem;
-  }
-  .creator.arrow {
-    left: -12.5rem;
-  } */
 }
 /* 950 px */
 @media (max-width: 59.375em) {
