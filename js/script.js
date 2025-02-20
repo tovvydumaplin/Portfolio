@@ -293,6 +293,21 @@ document.querySelectorAll(".project__gallery__img").forEach((img) => {
   });
 });
 
+document
+  .querySelector(".project__icon__close")
+  .addEventListener("click", function () {
+    document
+      .querySelectorAll(".project__gallery__img")
+      .forEach((img) => img.classList.remove("open__gallery"));
+  });
+
+document.querySelector("body").addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    document.querySelectorAll(".project__gallery__img").forEach((img) => {
+      img.classList.remove("open__gallery");
+    });
+  }
+});
 document.querySelector(".cover").addEventListener("click", function () {
   document.querySelectorAll(".project__gallery__img").forEach((img) => {
     img.classList.remove("open__gallery");

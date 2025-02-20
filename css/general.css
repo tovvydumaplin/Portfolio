@@ -344,11 +344,18 @@ body.dark {
   width: 23rem;
   line-height: 1.5;
 }
+.dark .hero__cta .text__description {
+  color: var(--black-color);
+}
+.dark .img__arrow {
+  fill: var(--orange-color);
+}
 .img__arrow {
   top: -12rem;
   left: 26rem;
   width: 12rem;
   height: 12rem;
+  transition: all 0.3s ease;
 }
 /* SECTION HERO CSS END */
 
@@ -383,7 +390,7 @@ body.dark {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #555;
+  background-color: #fff;
 }
 .modal.open {
   opacity: 1;
