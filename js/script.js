@@ -396,5 +396,5 @@ console.log(
 );
 console.log(
   "%c Have a great day!",
-  "background-color: cyan; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
+  "background-color: brown; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
 );
