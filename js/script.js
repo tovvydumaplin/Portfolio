@@ -293,6 +293,21 @@ document.querySelectorAll(".project__gallery__img").forEach((img) => {
   });
 });
 
+document
+  .querySelector(".project__icon__close")
+  .addEventListener("click", function () {
+    document
+      .querySelectorAll(".project__gallery__img")
+      .forEach((img) => img.classList.remove("open__gallery"));
+  });
+
+document.querySelector("body").addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    document.querySelectorAll(".project__gallery__img").forEach((img) => {
+      img.classList.remove("open__gallery");
+    });
+  }
+});
 document.querySelector(".cover").addEventListener("click", function () {
   document.querySelectorAll(".project__gallery__img").forEach((img) => {
     img.classList.remove("open__gallery");
@@ -340,12 +355,14 @@ document
   .querySelector(".header__hamburger")
   .addEventListener("click", function () {
     toggleScroll();
-    removeHeaderColor();
+    // removeHeaderColor();
+    addHeaderColor();
   });
 
 document.querySelectorAll(".menu__link").forEach((link) => {
   link.addEventListener("click", function () {
     openSideBar();
+    removeNoScroll();
   });
 });
 
@@ -358,90 +375,26 @@ document.querySelector("body").addEventListener("keydown", function (event) {
 });
 
 console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
+  "%c Hello there! 🎉 Welcome!! 🚀",
+  "background-color: orange; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
 );
 console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
+  "%c Feel free to explore, debug, and have fun coding! 😃",
+  "background-color: purple; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
 );
 console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
+  "%c Remember: Every error is just another step toward mastery. Keep learning and keep coding! 💡💻",
+  "background-color: green; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
 );
 console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
+  "%c Happy coding! ✨🔥",
+  "background-color: blue; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
 );
 console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
+  "%c Like what you see? send me an email here: tovvydumaplin@gmail.com",
+  "background-color: gray; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
 );
 console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
-);
-console.log(
-  "%c Hello there!%",
-  `background-color: orange; padding: 10px; box-sizing: border-box;`
+  "%c Have a great day!",
+  "background-color: brown; padding: 10px; color: white; font-weight: bold; border-radius: 5px; font-size: 14px;"
 );

@@ -487,6 +487,7 @@ const showDetailsTovvy = function () {
 // Function to show the my details on load
 const showLinksTovvy = function () {
   const socialContainer = document.querySelector(".hero__social__box");
+  socialContainer.innerHTML = "";
   const fragment = document.createDocumentFragment(); // Create a document fragment
 
   aboutTovvy.socialLinks.forEach((social) => {
@@ -500,7 +501,7 @@ const showLinksTovvy = function () {
     );
 
     linkElement.innerHTML = `<ion-icon class="social__icon" name="logo-${social.icon}"></ion-icon>
-      <span class="social__text">${social.username}</span>`;
+      <span class="social__text">${social.title}</span>`;
 
     fragment.appendChild(linkElement); // Append each link to the fragment
   });
