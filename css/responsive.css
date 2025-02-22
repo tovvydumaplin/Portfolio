@@ -1,5 +1,54 @@
 /* Laptop 1366px */
 @media (max-width: 85.375em) {
+  /* For newly added only */
+  .card__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal {
+    height: 100%;
+    overflow-y: scroll;
+
+    padding: 5rem 2rem 5rem 2rem;
+  }
+  .learning__heading__title {
+    gap: 2rem;
+  }
+  .heading__tertiary {
+    font-size: 3rem;
+  }
+  .project__container__details {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .project__heading__box .heading__secondary {
+    color: var(--black-color);
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-family: "raleway", sans-serif;
+  }
+  .project__heading__box .subheading {
+    color: var(--subheading-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "lexend", sans-serif;
+  }
+  .project__view {
+    display: flex;
+
+    padding: 3rem 2rem;
+  }
+  .project__heading__box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+  }
+  .project__btn__box {
+    flex-direction: column;
+  }
+  /* For newly added only */
   html {
     font-size: 55%;
   }
