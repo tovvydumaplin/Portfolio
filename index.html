@@ -1,52 +1,1099 @@
-<!DOCTYPE html>
+<!DOCTYPE html>Add commentMore actions
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currently Updating</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Lexend', sans-serif;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #121212;
-            color: #fff;
-            text-align: center;
-            flex-direction: column;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.7;
-        }
-        .loader {
-            margin-top: 20px;
-            width: 50px;
-            height: 50px;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            border-top: 5px solid #ffffff;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-</head>
-<body>
-    <h1>Currently Updating...</h1>
-    <p>We're making things even better. Check back soon!</p>
-    <div class="loader"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Hi, I’m Tovvy Dumaplin, a dedicated Web Developer from San Pedro, Laguna,
+      with a deep passion for crafting responsive, user-friendly websites and
+      delivering tailored solutions for businesses. I earned my Bachelor’s Degree
+      in Information Technology from the University of Perpetual Help System -
+      Jonelta in City of Biñan, Laguna."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Links -->
+    <link rel="icon" href="resources/fav_64.png" />
+    <link rel="apple-touch-icon" href="resources/fav_apple__touch.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- Preconnect Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/reusables.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Tovvy Dumaplin &mdash; Portfolio</title>
+  </head>
+  <body>
+    <div class="pos__rel" id="loading-screen">
+      <div class="blind left">
+        <p class="name tovvy pos__abs">Tovvy</p>
+      </div>
+      <div class="blind right">
+        <p class="name dumaplin pos__abs">Dumaplin</p>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__box flex">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="784.61 399.69 240.82 146.99"
+          class="tobi__logo__container"
+        >
+          <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+            text {
+              font-family: "Poppins", sans-serif;
+            }
+          </style>
+          <text
+            x="784.61"
+            y="504.69"
+            font-size="100"
+            font-weight="800"
+            class="tobi__logo"
+          >
+            TOBI
+          </text>
+          <ellipse cx="1006.30" cy="413" rx="11.95" ry="11.95" fill="#f24e1e" />
+          <text
+            x="803.37"
+            y="535.68"
+            font-size="30"
+            font-weight="500"
+            letter-spacing="9"
+            class="tobi__logo"
+          >
+            DUMAPLIN
+          </text>
+        </svg>
+        <div class="header__cta flex gap__4">
+          <ion-icon class="header__dark" name="moon-outline"></ion-icon>
+          <div class="header__hamburger flex gap__1">
+            <span class="hamburger__line top"></span>
+            <span class="hamburger__line short"></span>
+            <span class="hamburger__line bottom"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="sidebar pos__rel">
+      <div class="sidebar__wrapper">
+        <ul class="sidebar__items">
+          <li class="item"><a href="#about" class="menu__link">About me</a></li>
+          <li class="item"><a href="#skills" class="menu__link">Skills</a></li>
+          <li class="item">
+            <a href="#projects" class="menu__link">Projects</a>
+          </li>
+          <li class="item">
+            <a href="#reach" class="menu__link">Reach out</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main>
+      <section class="section__hero pos__rel">
+        <div class="stars"></div>
+        <span class="stroke__element tovvy__element">tovvy dumaplin</span>
+        <div class="container hero__box">
+          <div class="hero__text__box flex pos__rel">
+            <div class="position__wrapper">
+              <p class="hero__subheading">
+                Hi, I'm <span class="name__tovvy">Tovvy Dumaplin</span>
+              </p>
+              <h1 class="heading__primary">
+                web developer<span class="dot">.</span>
+              </h1>
+              <p class="text__description">
+                with a passion for innovative web technologies.
+              </p>
+              <div class="hero__cta flex pos__rel">
+                <svg
+                  class="img__arrow pos__abs"
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 117.000000 118.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g
+                    transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                    stroke="none"
+                  >
+                    <path
+                      d="M7 1174 c-23 -24 15 -259 55 -341 39 -80 120 -169 202 -223 76 -49
+                      205 -97 288 -106 l56 -6 46 -72 c73 -116 219 -250 359 -331 26 -15 47 -31 47
+                      -36 0 -5 -20 -9 -44 -9 -41 0 -74 -19 -59 -33 16 -16 202 0 209 18 8 19 -89
+                      174 -108 175 -24 0 -23 -16 8 -67 l26 -44 -39 20 c-58 29 -200 137 -260 196
+                      -28 29 -70 81 -93 116 l-41 63 78 13 c152 26 266 108 298 216 18 60 18 79 4
+                      130 -23 85 -111 146 -210 147 -111 0 -201 -72 -236 -190 -19 -62 -21 -200 -4
+                      -242 13 -35 4 -36 -103 -8 -169 43 -310 147 -379 277 -44 85 -56 129 -65 245
+                      -6 83 -17 110 -35 92z m898 -228 c146 -61 130 -258 -28 -351 -45 -26 -151 -55
+                      -204 -55 -26 0 -33 5 -42 31 -16 47 -14 189 4 240 43 121 161 180 270 135z"
+                    />
+                  </g>
+                </svg>
+                <p class="text__description" id="typeText">
+                  Let's create something extraordinary together.
+                </p>
+                <a class="btn__primary" href="#projects">see my works</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__absolute flex pos__rel">
+            <div class="hero__social__box flex pos__abs gap__3">
+              <a
+                class="social__link"
+                href="https://www.facebook.com/tovvy.dumaplin/"
+                target="_blank"
+                ><ion-icon class="social__icon" name="logo-facebook"></ion-icon
+                ><span class="social__text">tovvy.dumaplin</span></a
+              >
+              <a
+                class="social__link"
+                href="https://www.instagram.com/tovvy_/"
+                target="_blank"
+                ><ion-icon class="social__icon" name="logo-instagram"></ion-icon
+                ><span class="social__text">tovvy_</span></a
+              >
+              <a
+                class="social__link"
+                href="https://www.linkedin.com/in/tovvy-dumaplin/"
+                target="_blank"
+                ><ion-icon class="social__icon" name="logo-linkedin"></ion-icon
+                ><span class="social__text">tovvy-dumaplin</span></a
+              >
+              <a
+                class="social__link"
+                href="https://github.com/tovvydumaplin"
+                target="_blank"
+                ><ion-icon class="social__icon" name="logo-github"></ion-icon
+                ><span class="social__text">tovvydumaplin</span></a
+              >
+            </div>
+
+            <div class="hero__scroll__box flex pos__abs gap__3">
+              <div class="circle-text">
+                <div class="text">
+                  <span style="transform: rotate(0deg)">S</span>
+                  <span style="transform: rotate(10deg)">C</span>
+                  <span style="transform: rotate(20deg)">R</span>
+                  <span style="transform: rotate(30deg)">O</span>
+                  <span style="transform: rotate(40deg)">L</span>
+                  <span style="transform: rotate(50deg)">L</span>
+                  <span style="transform: rotate(60deg)"
+                    ><ion-icon name="sunny-outline"></ion-icon
+                  ></span>
+                  <span style="transform: rotate(70deg)">D</span>
+                  <span style="transform: rotate(80deg)">O</span>
+                  <span style="transform: rotate(90deg)">W</span>
+                  <span style="transform: rotate(100deg)">N</span>
+                  <span style="transform: rotate(110deg)"
+                    ><ion-icon name="sunny-outline"></ion-icon
+                  ></span>
+                  <span style="transform: rotate(120deg)">S</span>
+                  <span style="transform: rotate(130deg)">C</span>
+                  <span style="transform: rotate(140deg)">R</span>
+                  <span style="transform: rotate(150deg)">O</span>
+                  <span style="transform: rotate(160deg)">L</span>
+                  <span style="transform: rotate(170deg)">L</span>
+                  <span style="transform: rotate(180deg)"
+                    ><ion-icon name="sunny-outline"></ion-icon
+                  ></span>
+                  <span style="transform: rotate(190deg)">D</span>
+                  <span style="transform: rotate(200deg)">O</span>
+                  <span style="transform: rotate(210deg)">W</span>
+                  <span style="transform: rotate(220deg)">N</span>
+                  <span style="transform: rotate(230deg)"
+                    ><ion-icon name="sunny-outline"></ion-icon
+                  ></span>
+                  <span style="transform: rotate(240deg)">S</span>
+                  <span style="transform: rotate(250deg)">C</span>
+                  <span style="transform: rotate(260deg)">R</span>
+                  <span style="transform: rotate(270deg)">O</span>
+                  <span style="transform: rotate(280deg)">L</span>
+                  <span style="transform: rotate(290deg)">L</span>
+                  <span style="transform: rotate(300deg)"
+                    ><ion-icon name="sunny-outline"></ion-icon
+                  ></span>
+                  <span style="transform: rotate(310deg)">D</span>
+                  <span style="transform: rotate(320deg)">O</span>
+                  <span style="transform: rotate(330deg)">W</span>
+                  <span style="transform: rotate(340deg)">N</span>
+                  <span style="transform: rotate(350deg)"
+                    ><ion-icon name="sunny-outline"></ion-icon
+                  ></span>
+                </div>
+
+                <ion-icon
+                  class="arrow__down"
+                  name="arrow-down-outline"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="section__about pos__rel">
+        <span class="stroke__element__small pos__abs">developer</span>
+        <div
+          class="container grid grid__2__cols column__gap__6 align__cntr pos__rel index__1"
+        >
+          <img
+            class="dots__element pos__abs index__-1"
+            src="resources/dots_element.png"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            alt="Dots image"
+          />
+          <div class="img__box__profile">
+            <img
+              class="profile__img index__1"
+              alt="Image of Tovvy Dumaplin"
+              src="resources/profile.webp"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div
+            class="text__box flex gap__2 flex__column"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="heading__box">
+              <h2 class="heading__secondary">
+                about me <span class="dot">.</span>
+              </h2>
+              <p class="subheading">introducing my professional journey</p>
+            </div>
+            <div class="description__box flex flex__column gap__3">
+              <p class="text__description my__desc">
+                <!-- My description here -->
+              </p>
+            </div>
+            <div class="about__cta__box margin__top__5">
+              <button class="btn__primary learning__btn">
+                Learning Progess
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="modal learning__progress">
+          <div class="learning__heading__title">
+            <h3 class="heading__tertiary">What I'm Learning Right Now</h3>
+            <ion-icon
+              class="learning__icon__close"
+              name="close-outline"
+            ></ion-icon>
+          </div>
+        </div>
+      </section>
+      <section class="section__tagline">
+        <div class="container">
+          <!-- 1 -->
+          <div class="tag__box">
+            <div
+              class="tagline__word__box learner__tag pos__rel"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                class="pos__abs learner arrow"
+                src="resources/arrow_right.png"
+                alt="image on an arrow"
+              />
+              <p class="tagline__text learner__tag fill">learner.</p>
+            </div>
+            <div
+              class="tagline__desc__box"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <p class="text__description"></p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="tag__box">
+            <div
+              class="tagline__desc__box enjoyer__tag margin__right__13"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <p class="text__description"></p>
+            </div>
+            <div
+              class="tagline__word__box pos__rel"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <p class="tagline__text stroke"></p>
+              <img
+                class="pos__abs enjoyer arrow"
+                src="resources/arrow_left.png"
+                alt="image on an arrow"
+              />
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="tag__box">
+            <div
+              class="tagline__word__box explorer__tag pos__rel"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <p class="tagline__text fill"></p>
+              <img
+                class="pos__abs explorer arrow"
+                src="resources/arrow_right.png"
+                alt="image on an arrow"
+              />
+            </div>
+            <div
+              class="tagline__desc__box margin__left__13"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <p class="text__description"></p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="tag__box">
+            <div
+              class="tagline__desc__box creator__tag margin__right__13"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <p class="text__description"></p>
+            </div>
+            <div
+              class="tagline__word__box pos__rel"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <p class="tagline__text stroke"></p>
+              <img
+                class="pos__abs creator arrow"
+                src="resources/arrow_left.png"
+                alt="image on an arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section__skills pos__rel">
+        <span class="skill__stroke pos__abs"></span>
+        <div class="container flex flex__column pos__rel">
+          <div
+            class="title__box flex justify__space__b__flex"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="section__title">
+              <h2 class="heading__secondary">
+                skills<span class="dot">.</span>
+              </h2>
+              <p class="subheading">my development toolkit</p>
+            </div>
+            <div class="skills__text__box">
+              <p class="text__description">
+                These are the technologies I use for development. I am
+                continuously learning and excited to add new skills along the
+                way.
+              </p>
+            </div>
+          </div>
+          <div class="skills__box">
+            <!-- <div class="skill__row 1"> -->
+            <div
+              class="skill"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <img
+                class="skill__image"
+                src="resources/html.webp"
+                alt="HTML Logo"
+              />
+              <p class="skill__subheading">HTML</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-down-right"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <img
+                class="skill__image"
+                src="resources/js.webp"
+                alt="JavaScript Logo"
+              />
+              <p class="skill__subheading">JavaScript</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <img
+                class="skill__image"
+                src="resources/php.webp"
+                alt="PHP Logo"
+              />
+              <p class="skill__subheading">PHP</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-down-left"
+              data-aos-duration="1000"
+              data-aos-delay="700"
+            >
+              <img
+                class="skill__image"
+                src="resources/git.webp"
+                alt="Figma Logo"
+              />
+              <p class="skill__subheading">Git</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-down-left"
+              data-aos-duration="1000"
+              data-aos-delay="900"
+            >
+              <img
+                class="skill__image"
+                src="resources/laravel.webp"
+                alt="HTML Logo"
+              />
+              <p class="skill__subheading">Laravel</p>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="skill__row 2"> -->
+            <div
+              class="skill"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <img
+                class="skill__image"
+                src="resources/css.webp"
+                alt="CSS Logo"
+              />
+              <p class="skill__subheading">CSS</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <img
+                class="skill__image"
+                src="resources/jquery.webp"
+                alt="jQuery Logo"
+              />
+              <p class="skill__subheading">jQuery</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="500"
+            >
+              <img
+                class="skill__image"
+                src="resources/ci4.webp"
+                alt="CodeIgniter 4 Logo"
+              />
+              <p class="skill__subheading">Code Igniter</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-delay="700"
+            >
+              <img
+                class="skill__image"
+                src="resources/bootstrap.webp"
+                alt="Bootstrap Logo"
+              />
+              <p class="skill__subheading">BootStrap</p>
+            </div>
+            <div
+              class="skill"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+              data-aos-delay="900"
+            >
+              <img
+                class="skill__image"
+                src="resources/figma.webp"
+                alt="HTML Logo"
+              />
+              <p class="skill__subheading">Figma</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section__projects pos__rel">
+        <!-- Modal for Projects -->
+        <div class="cover">
+          <ion-icon
+            class="project__icon__close"
+            name="close-outline"
+          ></ion-icon>
+          <div class="pos__abs project__view">
+            <!-- 1 -->
+            <div class="project__container__details">
+              <div class="project__text__container">
+                <div class="project__heading__box">
+                  <h2 class="heading__secondary"></h2>
+                  <p class="subheading"></p>
+                </div>
+                <div class="project__desc__box">
+                  <p class="project__desc"></p>
+                </div>
+              </div>
+              <img
+                class="project__img__modal"
+                src=""
+                alt="image of a project"
+              />
+            </div>
+            <!-- 2 -->
+            <div class="project__container__details">
+              <div class="technologies__box">
+                <div class="tech__item__box">
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
+                  <p class="tech__title"></p>
+                </div>
+                <div class="tech__item__box">
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
+                  <p class="tech__title"></p>
+                </div>
+                <div class="tech__item__box">
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
+                  <p class="tech__title"></p>
+                </div>
+                <div class="tech__item__box">
+                  <img
+                    class="tech__item"
+                    src="resources/ci4.webp"
+                    alt="image of the tech used"
+                  />
+                  <p class="tech__title"></p>
+                </div>
+              </div>
+              <div class="project__text__container">
+                <div class="project__heading__box">
+                  <h2 class="heading__secondary"></h2>
+                  <p class="subheading"></p>
+                </div>
+                <div class="project__desc__box">
+                  <p class="project__desc"></p>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="project__container__details">
+              <div class="project__text__container">
+                <div class="project__heading__box">
+                  <h2 class="heading__secondary"></h2>
+                  <p class="subheading"></p>
+                </div>
+                <div class="project__desc__box">
+                  <p class="project__desc"></p>
+                </div>
+              </div>
+              <img
+                class="project__img__modal"
+                src="resources/fastcatbook_project.webp"
+                alt="Image of the project"
+              />
+            </div>
+            <!-- 4 -->
+            <div class="project__container__details">
+              <img
+                class="project__img__modal"
+                src="resources/fastcatbook_project.webp"
+                alt="Image of the project"
+              />
+              <div class="project__text__container">
+                <div class="project__heading__box">
+                  <h2 class="heading__secondary"></h2>
+                  <p class="subheading"></p>
+                </div>
+                <div class="project__desc__box">
+                  <p class="project__desc"></p>
+                  <div class="project__btn__box">
+                    <div>
+                      <a
+                        href="#"
+                        class="project__btn__primary"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><ion-icon
+                          name="globe-outline"
+                          class="project__icon"
+                        ></ion-icon
+                        >View live site</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="#"
+                        class="project__btn__secondary"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><ion-icon
+                          name="logo-github"
+                          class="project__icon"
+                        ></ion-icon>
+                        View in github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project__gallery__container">
+                <div class="project__heading__box">
+                  <h2 class="heading__secondary">Project Gallery</h2>
+                  <p class="subheading">Web Screen Shots</p>
+                </div>
+                <div class="project__gallery">
+                  <img
+                    class="project__gallery__img"
+                    src=""
+                    alt="Image of the project"
+                  />
+                  <img
+                    class="project__gallery__img"
+                    src=""
+                    alt="Image of the project"
+                  />
+                  <img
+                    class="project__gallery__img"
+                    src=""
+                    alt="Image of the project"
+                  />
+                  <img class="project__gallery__img" src="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Projects End -->
+        <span class="project__stroke pos__abs">front end</span>
+        <span class="project__stroke__second pos__abs">back end</span>
+        <div class="hover__text flex flex__column gap__3">
+          <p class="hover__text__title">View This Project</p>
+          <p class="hover__text__desc"></p>
+          <div class="flex align__cntr gap__1 hover__text__cta__container">
+            <p class="flex align__cntr gap__1 hover__text__cta pos__rel">
+              <ion-icon
+                class="icon__hover__cta"
+                name="expand-outline"
+              ></ion-icon
+              >Click to open project
+            </p>
+          </div>
+        </div>
+        <div class="container project__container pos__rel">
+          <div class="title__box project__heading project__title">
+            <h2
+              class="heading__secondary"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              projects<span class="dot">.</span>
+            </h2>
+            <p class="subheading" data-aos="fade-down" data-aos-duration="1000">
+              my recent works
+            </p>
+          </div>
+          <div class="project__box grid grid__2__cols">
+            <!-- 1st project -->
+            <div class="project project1">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img"
+                    src="resources/omnifood.webp"
+                    alt="OmniFood Landing Page"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                  />
+                </div>
+              </div>
+              <div class="project__title__box">
+                <p class="project__title">OmniFood Landing Page</p>
+                <div class="technology__box flex">
+                  <div class="technology flex align__cntr">
+                    <img
+                      class="project__tech"
+                      src="resources/html_project.png"
+                      alt="logo of css"
+                    />
+                    <p class="project__tech__title">HTML</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/css_project.png"
+                      alt="logo of jQuery"
+                    />
+                    <p class="project__tech__title">CSS</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/js_project.png"
+                      alt="logo of Code Igniter 4"
+                    />
+                    <p class="project__tech__title">JavaScript</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/figma_project.png"
+                      alt="logo of html"
+                    />
+                    <p class="project__tech__title">Figma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd project -->
+            <div class="project project2 transform__custom">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img"
+                    src="resources/fastcatbook.webp"
+                    alt="Fastcat Booking Website"
+                    data-aos="fade-up-left"
+                    data-aos-duration="1000"
+                  />
+                </div>
+              </div>
+              <div class="project__title__box">
+                <p class="project__title">Fastcat Booking Website</p>
+                <div class="technology__box flex">
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/bootstrap_project.png"
+                      alt="logo of css"
+                    />
+                    <p class="project__tech__title">BootStrap</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/jquery_project.png"
+                      alt="logo of jQuery"
+                    />
+                    <p class="project__tech__title">jQuery</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/codeigniter_project.png"
+                      alt="logo of Code Igniter 4"
+                    />
+                    <p class="project__tech__title">CI4</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/html_project.png"
+                      alt="logo of html"
+                    />
+                    <p class="project__tech__title">HTML</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd project -->
+            <div class="project project3">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img easybank"
+                    src="resources/onepager.webp"
+                    alt="FastCat Ticketing System"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-duration="1000"
+                  />
+                </div>
+              </div>
+              <div class="project__title__box">
+                <p class="project__title">FastCat Ticketing System</p>
+                <div class="technology__box flex">
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/bootstrap_project.png"
+                      alt="logo of css"
+                    />
+                    <p class="project__tech__title">BootStrap</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/jquery_project.png"
+                      alt="logo of jQuery"
+                    />
+                    <p class="project__tech__title">jQuery</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/codeigniter_project.png"
+                      alt="logo of Code Igniter 4"
+                    />
+                    <p class="project__tech__title">CI4</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/html_project.png"
+                      alt="logo of html"
+                    />
+                    <p class="project__tech__title">HTML</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 4th project -->
+            <div class="project project4 transform__custom">
+              <div class="wrap">
+                <div class="img__box">
+                  <img
+                    class="project__img"
+                    src="resources/rob.webp"
+                    alt="Remaining On Board Monitoring System"
+                    data-aos="fade-left"
+                    data-aos-offset="500"
+                    data-aos-duration="1000"
+                  />
+                </div>
+              </div>
+              <div class="project__title__box">
+                <p class="project__title">ROB Monitoring System</p>
+                <div class="technology__box flex">
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/php_project.png"
+                      alt="logo of css"
+                    />
+                    <p class="project__tech__title">PHP</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/css_project.png"
+                      alt="logo of css"
+                    />
+                    <p class="project__tech__title">CSS</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/js_project.png"
+                      alt="logo of Code Igniter 4"
+                    />
+                    <p class="project__tech__title">JavaScript</p>
+                  </div>
+                  <div class="technology flex">
+                    <img
+                      class="project__tech"
+                      src="resources/html_project.png"
+                      alt="logo of html"
+                    />
+                    <p class="project__tech__title">HTML</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reach" class="section__cta">
+        <div
+          class="container flex align__cntr flex__column align__text__center gap__5 pos__rel"
+        >
+          <div class="title__box">
+            <p class="heading__cta" data-aos="fade-up" data-aos-duration="1000">
+              I'd love to hear from you
+            </p>
+            <p
+              class="heading__cta stroke margin__top__2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              let's connect<span class="dot">.</span>
+            </p>
+          </div>
+          <div class="social__box">
+            <a
+              href="https://www.facebook.com/tovvy.dumaplin/"
+              target="_blank"
+              class="social flex align__cntr"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <ion-icon
+                class="social__icon__cta"
+                name="logo-facebook"
+              ></ion-icon>
+              facebook
+            </a>
+            <a
+              href="https://www.instagram.com/tovvy_/"
+              target="_blank"
+              class="social flex align__cntr"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <ion-icon
+                class="social__icon__cta"
+                name="logo-instagram"
+              ></ion-icon>
+              instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tovvy-dumaplin/"
+              target="_blank"
+              class="social flex align__cntr"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <ion-icon
+                class="social__icon__cta"
+                name="logo-linkedin"
+              ></ion-icon>
+              linkedin
+            </a>
+            <a
+              href="https://github.com/tovvydumaplin"
+              target="_blank"
+              class="social flex align__cntr"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <ion-icon class="social__icon__cta" name="logo-github"></ion-icon>
+              github
+            </a>
+          </div>
+          <h3
+            class="email__address"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            tovvydumaplin@gmail.com
+          </h3>
+          <p class="copied__text pos__abs">There we go! Email copied 🎉</p>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <hr class="horizontal__rule" />
+          <div class="footer__content flex align__cntr justify__space__b__flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="784.61 399.69 240.82 146.99"
+              class="tobi__logo__container"
+            >
+              <style>
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+                text {
+                  font-family: "Poppins", sans-serif;
+                }
+              </style>
+              <text
+                x="784.61"
+                y="504.69"
+                font-size="100"
+                font-weight="800"
+                class="tobi__logo"
+              >
+                TOBI
+              </text>
+              <ellipse
+                cx="1006.30"
+                cy="413"
+                rx="11.95"
+                ry="11.95"
+                fill="#f24e1e"
+              />
+              <text
+                x="803.37"
+                y="535.68"
+                font-size="30"
+                font-weight="500"
+                letter-spacing="9"
+                class="tobi__logo"
+              >
+                DUMAPLIN
+              </text>
+            </svg>
+            <ul class="subtitle__box flex">
+              <li class="footer__subtitle">Front-End Development</li>
+              <li class="footer__subtitle">Backend Migration</li>
+              <li class="footer__subtitle">Responsive Design</li>
+            </ul>
+            <div class="copy__box">
+              &copy; <span id="year">2024</span> Tovvy Dumaplin.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/object.js"></script>
+  </body>
 </html>
